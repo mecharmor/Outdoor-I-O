@@ -4,7 +4,7 @@ Hunter Helper IOS App
 
 ## Team Members
 - Cory Lewis
-- tbd....
+- Roderic Kong
 
 ## What's Hunter Helper?
 
@@ -20,7 +20,10 @@ Hunter Helper is an IOS app designed for hunters who need an offline app to keep
 
 
 ## Functionality
-- Add Functionality here....
+- 1. Ability to keep track of your hunt along with which firearm used.
+- 2. History of firearms used.
+- 3. Lists the stats of your firearms (i.e bullet caliber, brand, type of gun, model of gun, attachments, special functionalities of the gun etc.) 
+- 4. Notepad for storing notes, and records.
 
 ## Getting Started
 > On Mac **ONLY**
