@@ -6,8 +6,22 @@ Hunter Helper IOS App
 - Cory Lewis
 - Roderic Kong
 
-## What's Hunter Helper?
+## Road Map
+| Status | Goal | Note |
+| :---: | :--- | --- |
+| ✔ | [11/11 - Git Setup](https://github.com/mecharmor) | `done` |
+| ❌ | [11/14 - Proposal: Must have and Nice to have features](https://github.com/mecharmor) |`in progress`|
+| ❌ | [Wireframes and Flow](https://github.com/ipfs/pm/pull/131) | `incomplete` |
+| ❌ | [UI -> Create App Navigation](https://github.com/ipfs/pm/pull/131) | `incomplete` |
+| ❌ | [DB -> Setup SQLITE DB](https://github.com/mecharmor) |`incomplete`|
+| ❌ | [DB -> Setup Swift MapKit for dropping pins and pathing](https://github.com/mecharmor) | `incomplete` |
+| ❌ | [INTEGRATION -> Connect View to Back End](https://github.com/mecharmor) | `incomplete` |
+| ❌ | [tbd implementation....](https://github.com/mecharmor) | `incomplete` |
+| ❌ | [11/21 - Prototype: Wireframes, work est, finalize features ](https://github.com/mecharmor) |`incomplete`|
+| ❌ | [12/5 - Last Week Check-in ](https://github.com/mecharmor) |`incomplete`|
+| ❌ | [12/12 - Final Project deadline ](https://github.com/mecharmor) |`incomplete`|
 
+## What's Hunter Helper?
 
 Hunter Helper is an IOS app designed for hunters who need an offline app to keep records of hunting paths and notes regarding scopes and the adjustments needed when hunting at various distances and terrains.
 
