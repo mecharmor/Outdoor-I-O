@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E463F77C2389D826007C1E01 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463F77B2389D826007C1E01 /* PersistenceManager.swift */; };
+		E463F7892389DB93007C1E01 /* Pin+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463F7852389DB93007C1E01 /* Pin+CoreDataClass.swift */; };
+		E463F78A2389DB93007C1E01 /* Pin+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463F7862389DB93007C1E01 /* Pin+CoreDataProperties.swift */; };
+		E463F78B2389DB93007C1E01 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463F7872389DB93007C1E01 /* Trip+CoreDataClass.swift */; };
+		E463F78C2389DB93007C1E01 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463F7882389DB93007C1E01 /* Trip+CoreDataProperties.swift */; };
 		E4AC72212389D17D00DD3627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC72202389D17D00DD3627 /* AppDelegate.swift */; };
 		E4AC72232389D17D00DD3627 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC72222389D17D00DD3627 /* SceneDelegate.swift */; };
 		E4AC72252389D17D00DD3627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC72242389D17D00DD3627 /* ViewController.swift */; };
@@ -14,13 +19,14 @@
 		E4AC722B2389D17D00DD3627 /* OutdoorIO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4AC72292389D17D00DD3627 /* OutdoorIO.xcdatamodeld */; };
 		E4AC722D2389D17D00DD3627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AC722C2389D17D00DD3627 /* Assets.xcassets */; };
 		E4AC72302389D17D00DD3627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AC722E2389D17D00DD3627 /* LaunchScreen.storyboard */; };
-		E4AC723B2389D61E00DD3627 /* Pin+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC72372389D61E00DD3627 /* Pin+CoreDataClass.swift */; };
-		E4AC723C2389D61E00DD3627 /* Pin+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC72382389D61E00DD3627 /* Pin+CoreDataProperties.swift */; };
-		E4AC723D2389D61E00DD3627 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC72392389D61E00DD3627 /* Trip+CoreDataClass.swift */; };
-		E4AC723E2389D61E00DD3627 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC723A2389D61E00DD3627 /* Trip+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E463F77B2389D826007C1E01 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		E463F7852389DB93007C1E01 /* Pin+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pin+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E463F7862389DB93007C1E01 /* Pin+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pin+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E463F7872389DB93007C1E01 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E463F7882389DB93007C1E01 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E4AC721D2389D17D00DD3627 /* OutdoorIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutdoorIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AC72202389D17D00DD3627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4AC72222389D17D00DD3627 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,10 +36,6 @@
 		E4AC722C2389D17D00DD3627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4AC722F2389D17D00DD3627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4AC72312389D17D00DD3627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4AC72372389D61E00DD3627 /* Pin+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pin+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E4AC72382389D61E00DD3627 /* Pin+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pin+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		E4AC72392389D61E00DD3627 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E4AC723A2389D61E00DD3627 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +84,11 @@
 		E4AC723F2389D62C00DD3627 /* CoreDataModel */ = {
 			isa = PBXGroup;
 			children = (
-				E4AC72372389D61E00DD3627 /* Pin+CoreDataClass.swift */,
-				E4AC72382389D61E00DD3627 /* Pin+CoreDataProperties.swift */,
-				E4AC72392389D61E00DD3627 /* Trip+CoreDataClass.swift */,
-				E4AC723A2389D61E00DD3627 /* Trip+CoreDataProperties.swift */,
+				E463F7852389DB93007C1E01 /* Pin+CoreDataClass.swift */,
+				E463F7862389DB93007C1E01 /* Pin+CoreDataProperties.swift */,
+				E463F7872389DB93007C1E01 /* Trip+CoreDataClass.swift */,
+				E463F7882389DB93007C1E01 /* Trip+CoreDataProperties.swift */,
+				E463F77B2389D826007C1E01 /* PersistenceManager.swift */,
 			);
 			path = CoreDataModel;
 			sourceTree = "<group>";
@@ -161,13 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E463F78C2389DB93007C1E01 /* Trip+CoreDataProperties.swift in Sources */,
 				E4AC72252389D17D00DD3627 /* ViewController.swift in Sources */,
-				E4AC723D2389D61E00DD3627 /* Trip+CoreDataClass.swift in Sources */,
-				E4AC723E2389D61E00DD3627 /* Trip+CoreDataProperties.swift in Sources */,
-				E4AC723C2389D61E00DD3627 /* Pin+CoreDataProperties.swift in Sources */,
-				E4AC723B2389D61E00DD3627 /* Pin+CoreDataClass.swift in Sources */,
 				E4AC72212389D17D00DD3627 /* AppDelegate.swift in Sources */,
+				E463F77C2389D826007C1E01 /* PersistenceManager.swift in Sources */,
+				E463F78A2389DB93007C1E01 /* Pin+CoreDataProperties.swift in Sources */,
+				E463F7892389DB93007C1E01 /* Pin+CoreDataClass.swift in Sources */,
 				E4AC722B2389D17D00DD3627 /* OutdoorIO.xcdatamodeld in Sources */,
+				E463F78B2389DB93007C1E01 /* Trip+CoreDataClass.swift in Sources */,
 				E4AC72232389D17D00DD3627 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

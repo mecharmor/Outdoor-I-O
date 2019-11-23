@@ -9,10 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+//    let persistenceManager: PersistenceManager
+//    init(persistenceManager: PersistenceManager){
+//        self.persistenceManager = persistenceManager
+//        super.init(nibName: nil, bundle: nil)
+//    }
+//    
+//    required init?(coder aDecoder: NSCoder){
+//        fatalError("init not implemented")
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello World!")
+        
+        
+        //persistenceManager
         // Do any additional setup after loading the view.
     }
 

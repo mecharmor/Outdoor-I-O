@@ -17,11 +17,11 @@ extension Pin {
         return NSFetchRequest<Pin>(entityName: "Pin")
     }
 
-    @NSManaged public var longitude: Float
-    @NSManaged public var latitude: Float
     @NSManaged public var img: Data?
-    @NSManaged public var thumb: Data?
+    @NSManaged public var latitude: Float
+    @NSManaged public var longitude: Float
     @NSManaged public var msg: String?
+    @NSManaged public var thumb: Data?
     @NSManaged public var timestamp: Date?
     @NSManaged public var trip: Trip?
 
