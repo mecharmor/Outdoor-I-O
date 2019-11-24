@@ -1,0 +1,5 @@
+target 'OutdoorIO' do
+  use_frameworks!
+
+  pod 'EasyStash'
+end
