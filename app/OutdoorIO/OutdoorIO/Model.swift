@@ -1,14 +1,136 @@
-//
-//  Model.swift
-//  OutdoorIO
-//
-//  Created by Cory Lewis on 11/23/19.
-//  Copyright © 2019 CR. All rights reserved.
-//
-
 import UIKit
 import Foundation
 import EasyStash // https://github.com/onmyway133/EasyStash
+
+final class Model {
+    /* Flow of the Class:
+      - Follows Singleton design pattern. Class will initialize itself when I is access from Model.I
+      - Initializer will create a folder on the iPhone and Trip is what dictates the current state
+      - Adding a Trip will save the old one and create a new trip with given name
+      - The Trip class holds an array of Pins (One) -> (Many) relationship
+      - [TODO] implement cache */
+    
+    static var I = Model() //Singleton
+    var trip:Trip? = nil
+    let dataKey: String = "TRIPS"
+    let storage: EasyStashWrapper
+    
+    private init(){
+        self.storage = EasyStashWrapper(nameOfFolder: "OutdoorIO")
+        // [issue], need to cache current trip in future (app crash)
+    }
+    
+    func newTrip(name: String) {
+        guard let _ = self.trip else {
+            self.trip = Trip(name: name)
+            return
+        }
+        self.storage.save(val: self.trip, key: self.dataKey)
+        self.trip = Trip(name: name)
+    }
+    
+    func newPin(img: UIImage, msg: String = "") -> Bool {
+        let long: Double = 0.2222222 // replace with real long retrieval
+        let lat: Double = 0.3333333 // replace with real lat retrieval
+        guard let _ = self.trip else {
+            return false // no trip created yet
+        }
+        self.trip?.addPin(pin: Pin(long: long, lat: lat, img: img, msg: msg))
+        return true
+    }
+    
+    func getAllTrips() -> [Trip]? {
+        return self.storage.load(key: self.dataKey)
+    }
+    
+    func getTripPins() -> [Pin]? {
+        guard let pins: [Pin] = self.trip?.pins else {
+            return nil
+        }
+        return pins
+    }
+    
+    func save() {
+        guard let _ = self.trip else {
+            return // Nothing to save
+        }
+        self.storage.save(val: self.trip, key: self.dataKey)
+        self.trip = nil // reset
+    }
+}
+
+class EasyStashWrapper {
+    // Written By: Cory Lewis
+    // Usage: Store/Retrieve Array of Generic Data
+    // immutable and does not overwrite
+    // Appends to current data and re-saves
+    var storage : Storage
+    
+    init(nameOfFolder: String) {
+        var options = Options()
+        options.folder = nameOfFolder
+        self.storage = try! Storage(options: options)
+    }
+    
+    func save<T: Decodable & Encodable>(val: T, key: String) {
+        DispatchQueue.global().async {
+            do {
+                if self.storage.exists(forKey: key) { // check if trips exist
+                    var l: [T] = try self.storage.load(forKey: key, as: [T].self)
+                    l.append(val)
+                    try self.storage.save(object: l, forKey: key) // overwrite previous entry
+                } else {
+                    try self.storage.save(object: [val], forKey: key)
+                }
+            } catch {
+                print("[Model.swift -> EasyStashWrapper], save failed horribly")
+            }
+        }
+     }
+    
+    func load<T: Decodable & Encodable>(key: String) -> [T]? {
+        do {
+            if self.storage.exists(forKey: key) {
+                return try storage.load(forKey: key, as: [T].self)
+            }
+        } catch {
+            print("[Model.swift -> EasyStashWrapper], load failed horribly")
+        }
+        return nil
+    }
+    
+    func getFiles() -> [File]? {
+        do {
+            return try storage.files()
+        } catch {
+            print("[Model.swift -> EasyStashWrapper], getFiles() failed horribly")
+        }
+        return nil
+    }
+    
+    func clear() {
+        do {
+            try storage.removeAll()
+        } catch {
+            print("[Model.swift -> EasyStashWrapper], removeAll() failed horribly")
+        }
+    }
+}
+
+// Physical Schema for stored data
+
+struct Trip: Decodable, Encodable{
+    let name: String
+    var pins: [Pin]? //Array of Pins
+    
+    init(name: String) {
+        self.name = name
+        self.pins = []
+    }
+    mutating func addPin(pin: Pin){
+        pins?.append(pin)
+    }
+}
 
 struct Pin: Decodable, Encodable{
     var long: Double!
@@ -20,89 +142,8 @@ struct Pin: Decodable, Encodable{
     init(long:Double, lat:Double, img: UIImage, msg: String) {
         self.long = long
         self.lat = lat
-        self.img = self.convertImageToBase64(image: img)
-        self.thumb = self.convertImageToBase64(image: self.createThumbnail(image: img)) // create thumbnail then serialize into base 64
+        self.img = Shared.I.convertImageToBase64(image: img)
+        self.thumb = Shared.I.convertImageToBase64(image: Shared.I.createThumbnail(image: img)) // Scale to Thumb then base 64 it
         self.msg = msg
     }
-    
-    func convertImageToBase64(image: UIImage) -> String { // Convert UIImage to a base64 representation
-       let imageData = image.pngData()!
-        return imageData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
-    }
-    
-    func createThumbnail(image: UIImage) -> UIImage {
-        let newWidth: CGFloat = 100 // px to scale down to
-        let scale = newWidth / image.size.width
-        let newHeight = image.size.height * scale
-        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
-        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
-        let thumb = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return thumb!
-    }
 }
-struct Trip: Decodable, Encodable{
-    let name: String
-    var pins: [Pin]? //Array of Pins
-    
-    init(name: String) {
-        self.name = name
-    }
-    mutating func addPin(pin: Pin){
-        pins?.append(pin)
-    }
-}
-
-final class Model{
-    var storage : Storage
-    private init(){
-        var options = Options()
-        options.folder = "OutdoorIO"
-        self.storage = try! Storage(options: options)
-    }
-    
-    static var I = Model() //Singleton
-    var currentTrip:Trip? = nil
-    let keyToTrips = "TRIP"
-    
-    // Add trip that stores all the pins
-    func addTrip(name: String){
-        guard let trip = self.currentTrip else {
-            self.currentTrip = Trip(name: name) // first trip
-            return
-        }
-        self.save(trip: trip) // save previous trip
-        self.currentTrip = Trip(name: name)
-    }
-    
-    // Save a Trip
-    func save(trip: Trip){
-        do{
-            try self.storage.save(object: trip, forKey: self.keyToTrips)
-        } catch {
-            print("[Model.swift], saveTrip failed")
-        }
-    }
-    
-    // Helper Methods
-    func convertBase64ToImage(imageString: String) -> UIImage { // Convert a base64 representation to a UIImage
-         let imageData = Data(base64Encoded: imageString, options: Data.Base64DecodingOptions.ignoreUnknownCharacters)!
-         return UIImage(data: imageData)!
-     }
-}
-
-//
-//var options = Options()
-//       options.folder = "Trip"
-//       var storage = try! Storage(options: options)
-//
-//       let dict = {key1: "value1", key2: "value2"}
-//       let list = [dict]
-//
-//       try storage.save
-//
-//       try storage.save(list, forKey: "user")
-//       try storage.save(cities, forKey: "cities")
-//
-//       let loadedUser = try storage.load(forKey: "user", as: User.self)
-//       let loadedCities = try storage.load(forKey: "cities", as: [City].self)

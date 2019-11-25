@@ -1,19 +1,14 @@
-//
-//  ViewController.swift
-//  OutdoorIO
-//
-//  Created by Cory Lewis on 11/23/19.
-//  Copyright © 2019 CR. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello world")
-        // Do any additional setup after loading the view.
+        
+        Model.I.newTrip(name: "Trip 1") // Sample Interactions with the database
+        
+        // Upon delegate actions we need to take picture and invoke
+        // Model.I.newPin(img: <#T##UIImage#>, msg: <#T##String#>)
         
        
     }
