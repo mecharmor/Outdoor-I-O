@@ -7,6 +7,7 @@
 //  Class `Shared` Follows the Singleton design pattern to help use helper methods throughout the program
 import Foundation
 import UIKit
+import CoreLocation
 
 final class Shared {
     private init() {
@@ -36,6 +37,9 @@ final class Shared {
         UIGraphicsEndImageContext()
         return thumb!
     }
+    
+    
+    
 }
 
 
