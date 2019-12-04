@@ -13,7 +13,7 @@ Hunter Helper IOS App
 | ❌ | [11/14 - Proposal: Must have and Nice to have features](https://github.com/mecharmor) |`in progress`|
 | ❌ | [Wireframes and Flow](https://github.com/ipfs/pm/pull/131) | `incomplete` |
 | ❌ | [UI -> Create App Navigation](https://github.com/ipfs/pm/pull/131) | `incomplete` |
-| ❌ | [DB -> Setup SQLITE DB](https://github.com/mecharmor) |`incomplete`|
+| ✔ | [DB -> Setup EasyStash for DB](https://github.com/mecharmor) |`done`|
 | ❌ | [DB -> Setup Swift MapKit for dropping pins and pathing](https://github.com/mecharmor) | `incomplete` |
 | ❌ | [INTEGRATION -> Connect View to Back End](https://github.com/mecharmor) | `incomplete` |
 | ❌ | [tbd implementation....](https://github.com/mecharmor) | `incomplete` |
