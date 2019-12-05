@@ -17,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG8-1k-rqS">
-                                <rect key="frame" x="37" y="41" width="301" height="169"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG8-1k-rqS">
+                                <rect key="frame" x="36" y="40" width="278" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="kUc-id-JnI"/>
+                                    <constraint firstAttribute="height" constant="150" id="mPc-C0-V74"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="START TRACKING" backgroundImage="wilderness1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -27,25 +31,11 @@
                                     <segue destination="mXM-bR-YZ5" kind="showDetail" id="3cV-Ur-uz1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0M-ZV-pEd">
-                                <rect key="frame" x="37" y="257" width="301" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qa-xD-sfe">
+                                <rect key="frame" x="37" y="460" width="277" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="301" id="P6R-Be-huV"/>
-                                    <constraint firstAttribute="height" constant="150" id="sBJ-Fc-uHv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="HISTORY" backgroundImage="wilderness2">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Ixa-JJ-BNv" kind="showDetail" id="ALp-V4-tnY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qa-xD-sfe">
-                                <rect key="frame" x="37" y="452" width="301" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="301" id="Ogr-Os-4cC"/>
-                                    <constraint firstAttribute="height" constant="150" id="nGa-gv-Jvs"/>
+                                    <constraint firstAttribute="width" constant="300" id="34u-hi-8ca"/>
+                                    <constraint firstAttribute="height" constant="150" id="bOY-SO-OA7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="SETTINGS" backgroundImage="tools">
@@ -55,21 +45,30 @@
                                     <segue destination="SUw-sJ-v2m" kind="showDetail" id="KPq-x1-8DQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0M-ZV-pEd">
+                                <rect key="frame" x="37" y="250" width="277" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="KNi-A9-L7o"/>
+                                    <constraint firstAttribute="width" constant="300" id="c1G-sa-6TM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="HISTORY" backgroundImage="wilderness2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ixa-JJ-BNv" kind="showDetail" id="ALp-V4-tnY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.36078431372549019" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="R0M-ZV-pEd" firstAttribute="top" secondItem="kG8-1k-rqS" secondAttribute="bottom" constant="47" id="2Bj-V2-GGg"/>
-                            <constraint firstItem="2Qa-xD-sfe" firstAttribute="width" secondItem="kG8-1k-rqS" secondAttribute="width" id="3GV-fo-H2a"/>
-                            <constraint firstItem="R0M-ZV-pEd" firstAttribute="width" secondItem="kG8-1k-rqS" secondAttribute="width" id="9Bn-y1-ros"/>
-                            <constraint firstItem="R0M-ZV-pEd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="CMp-B8-Krn"/>
-                            <constraint firstItem="2Qa-xD-sfe" firstAttribute="top" secondItem="R0M-ZV-pEd" secondAttribute="bottom" constant="45" id="Dg4-fP-7FT"/>
-                            <constraint firstItem="kG8-1k-rqS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="Dnu-pg-dms"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R0M-ZV-pEd" secondAttribute="trailing" constant="37" id="LyB-gc-FR9"/>
-                            <constraint firstItem="2Qa-xD-sfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Q58-go-M1c"/>
-                            <constraint firstItem="kG8-1k-rqS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="a3A-Mp-hKa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kG8-1k-rqS" secondAttribute="trailing" constant="37" id="hKs-XJ-1m3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Qa-xD-sfe" secondAttribute="trailing" constant="37" id="px5-ra-hZk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Qa-xD-sfe" secondAttribute="bottom" constant="65" id="s1k-aY-bjf"/>
+                            <constraint firstItem="kG8-1k-rqS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="2wV-eu-gbN"/>
+                            <constraint firstItem="R0M-ZV-pEd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Fxf-rU-eJV"/>
+                            <constraint firstItem="R0M-ZV-pEd" firstAttribute="top" secondItem="kG8-1k-rqS" secondAttribute="bottom" constant="60" id="W6L-Vb-bS9"/>
+                            <constraint firstItem="kG8-1k-rqS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="dXx-5D-lWO"/>
+                            <constraint firstItem="2Qa-xD-sfe" firstAttribute="top" secondItem="R0M-ZV-pEd" secondAttribute="bottom" constant="60" id="erm-q0-w12"/>
+                            <constraint firstItem="2Qa-xD-sfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="tpQ-Ic-cS5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Qa-xD-sfe" secondAttribute="trailing" constant="61" id="vHl-f9-dak"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -81,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="221"/>
+            <point key="canvasLocation" x="773.60000000000002" y="220.83958020989508"/>
         </scene>
         <!--Start Tracking-->
         <scene sceneID="yJx-BZ-gMW">
@@ -92,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6T-Wv-9D9">
-                                <rect key="frame" x="15" y="23" width="45" height="30"/>
+                                <rect key="frame" x="15" y="20" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="back_button"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -105,12 +104,21 @@
                                 <rect key="frame" x="5" y="63" width="364" height="584"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmM-Qf-dWW">
+                                <rect key="frame" x="248" y="497" width="111" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="camera" image="button"/>
+                                <connections>
+                                    <segue destination="mVb-T8-ccH" kind="show" identifier="datapass" id="Dey-BE-vHI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2901960784" green="0.36078431370000003" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="kp7-FZ-3WK"/>
                     </view>
                     <connections>
                         <outlet property="Back" destination="P6T-Wv-9D9" id="d90-9g-k31"/>
+                        <outlet property="Camera" destination="dmM-Qf-dWW" id="nJ6-br-uHZ"/>
                         <outlet property="map_view" destination="542-TN-yx1" id="ubz-4y-OgB"/>
                     </connections>
                 </viewController>
@@ -119,16 +127,53 @@
             </objects>
             <point key="canvasLocation" x="1856.8" y="-656.22188905547227"/>
         </scene>
+        <!--Camera Logic-->
+        <scene sceneID="MaU-a9-8HP">
+            <objects>
+                <viewController id="mVb-T8-ccH" customClass="CameraLogic" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1dl-92-O3L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIP-Xm-5dY">
+                                <rect key="frame" x="16" y="20" width="46" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Gda-iI-pmJ" kind="unwind" unwindAction="unwind_to_start_tracker:" id="0Kx-VF-Og7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZB-l9-OaK">
+                                <rect key="frame" x="120" y="141" width="134" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="G2o-q2-tdF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X1y-8R-aFO"/>
+                    <connections>
+                        <outlet property="label" destination="hZB-l9-OaK" id="HE3-xa-6qE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQW-L6-WfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Gda-iI-pmJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2936.8000000000002" y="-658.02098950524737"/>
+        </scene>
         <!--History-->
         <scene sceneID="Yrw-EB-RD3">
             <objects>
                 <viewController id="Ixa-JJ-BNv" customClass="History" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dKI-ZE-bx8">
+                    <view key="view" contentMode="scaleAspectFill" id="dKI-ZE-bx8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrT-qP-csn">
-                                <rect key="frame" x="15" y="23" width="45" height="30"/>
+                                <rect key="frame" x="15" y="20" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Back">
@@ -160,7 +205,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQW-S8-0V1">
-                                <rect key="frame" x="15" y="23" width="45" height="30"/>
+                                <rect key="frame" x="15" y="20" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Back">
@@ -185,6 +230,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button" width="50" height="50"/>
         <image name="tools" width="1125" height="750"/>
         <image name="wilderness1" width="1890" height="967"/>
         <image name="wilderness2" width="1125.5" height="750"/>

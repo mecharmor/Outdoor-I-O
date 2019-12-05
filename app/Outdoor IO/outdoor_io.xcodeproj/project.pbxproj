@@ -17,8 +17,9 @@
 		20E23459238C8C2600519F9E /* Start_Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E23458238C8C2600519F9E /* Start_Tracking.swift */; };
 		382A3DB1238DC6C300E0380C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382A3DB0238DC6C300E0380C /* MapKit.framework */; };
 		CF00AD9DA04149B6710A4F35 /* Pods_outdoor_io.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1578FC70D618832B83C47F /* Pods_outdoor_io.framework */; };
-		E4425C932394CB87001FFDBB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4425C922394CB87001FFDBB /* Model.swift */; };
-		E4425C952394CBA1001FFDBB /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4425C942394CBA1001FFDBB /* Shared.swift */; };
+		E47F0B2E23976CA9005890F0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F0B2C23976CA9005890F0 /* Model.swift */; };
+		E47F0B2F23976CA9005890F0 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F0B2D23976CA9005890F0 /* Shared.swift */; };
+		E4F267622398B936000EE8F0 /* CameraLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F267612398B936000EE8F0 /* CameraLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +56,9 @@
 		2C38B7D8C85C407D1BF722AA /* Pods-outdoor_io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outdoor_io.release.xcconfig"; path = "Target Support Files/Pods-outdoor_io/Pods-outdoor_io.release.xcconfig"; sourceTree = "<group>"; };
 		382A3DB0238DC6C300E0380C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5893C57E4B6469AD11A6A709 /* Pods-outdoor_io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outdoor_io.debug.xcconfig"; path = "Target Support Files/Pods-outdoor_io/Pods-outdoor_io.debug.xcconfig"; sourceTree = "<group>"; };
-		E4425C922394CB87001FFDBB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		E4425C942394CBA1001FFDBB /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		E47F0B2C23976CA9005890F0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../../../../../Desktop/Model.swift; sourceTree = "<group>"; };
+		E47F0B2D23976CA9005890F0 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = ../../../../../../Desktop/Shared.swift; sourceTree = "<group>"; };
+		E4F267612398B936000EE8F0 /* CameraLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,8 @@
 		20A98EA2238C5955004747D1 /* outdoor_io */ = {
 			isa = PBXGroup;
 			children = (
+				E47F0B2C23976CA9005890F0 /* Model.swift */,
+				E47F0B2D23976CA9005890F0 /* Shared.swift */,
 				20A98EA3238C5955004747D1 /* AppDelegate.swift */,
 				20A98EA5238C5955004747D1 /* ViewController.swift */,
 				20E23454238C8B6600519F9E /* Settings.swift */,
@@ -118,8 +122,7 @@
 				20A98EAA238C5957004747D1 /* Assets.xcassets */,
 				20A98EAC238C5957004747D1 /* LaunchScreen.storyboard */,
 				20A98EAF238C5957004747D1 /* Info.plist */,
-				E4425C922394CB87001FFDBB /* Model.swift */,
-				E4425C942394CBA1001FFDBB /* Shared.swift */,
+				E4F267612398B936000EE8F0 /* CameraLogic.swift */,
 			);
 			path = outdoor_io;
 			sourceTree = "<group>";
@@ -317,11 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4425C952394CBA1001FFDBB /* Shared.swift in Sources */,
+				E47F0B2F23976CA9005890F0 /* Shared.swift in Sources */,
 				20E23459238C8C2600519F9E /* Start_Tracking.swift in Sources */,
 				20E23455238C8B6600519F9E /* Settings.swift in Sources */,
+				E4F267622398B936000EE8F0 /* CameraLogic.swift in Sources */,
 				20A98EA6238C5955004747D1 /* ViewController.swift in Sources */,
-				E4425C932394CB87001FFDBB /* Model.swift in Sources */,
+				E47F0B2E23976CA9005890F0 /* Model.swift in Sources */,
 				20E23457238C8BC600519F9E /* History.swift in Sources */,
 				20A98EA4238C5955004747D1 /* AppDelegate.swift in Sources */,
 			);

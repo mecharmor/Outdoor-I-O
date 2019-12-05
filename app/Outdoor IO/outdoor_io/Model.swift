@@ -10,6 +10,7 @@ final class Model {
       - The Trip class holds an array of Pins (One) -> (Many) relationship
       - [TODO] implement cache */
     
+    
     static var I = Model() //Singleton
     var trip:Trip? = nil
     let dataKey: String = "TRIPS"
