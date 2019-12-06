@@ -37,17 +37,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-        
         // #1
         screen_backdrop()
         
         // #2
         button_settings()
-        
-        // Sample Data Creation
-        // Created by Cory Lewis
-        //Model.I.newTrip(name: "Trip 1")
         
     }
 

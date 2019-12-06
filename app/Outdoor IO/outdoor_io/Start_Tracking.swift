@@ -17,29 +17,27 @@ import CoreLocation
 
 class Start_Tracking: UIViewController {
 
-    // Button //
+    // Back Button //
     @IBOutlet weak var Back: UIButton!
     
-    // Camera //
+    // Camera Button //
     @IBOutlet weak var Camera: UIButton!
-    
-    // Map /
+
+
+    // Map //
     @IBOutlet weak var map_view: MKMapView!
-    
-    // Connect Pin Button Tomorrow//
-    @IBOutlet weak var drop_pint: UIButton!
-    
     
     // countdown seconds
     var countdown = 30
     var timer = Timer()
     
-    var locationManager = CLLocationManager()
+    let locationManager = CLLocationManager()
     
-    // dirty hack for now
-    var current_longtitude : Double?
-    var current_latitude : Double?
-
+    // var for coordinates
+    var long : CLLocationDegrees?
+    var lat : CLLocationDegrees?
+    
+    
     // --- button settings --- //
     func button_settings() {
         // button view definitions
@@ -75,12 +73,10 @@ class Start_Tracking: UIViewController {
             locationManager.delegate = self
             locationManager.startUpdatingLocation()
             
-            //Model.I.newTrip(name: "Trip 1") // Sample Interactions with the database
-                   //Model.I.newPin(img: <#T##UIImage#>, msg: "hello!!!")
-                   // Upon delegate actions we need to take picture and invoke
-                   // Model.I.newPin(img: <#T##UIImage#>, msg: <#T##String#>)
-            
-            
+            Model.I.newTrip(name: "Trip 1") // Sample Interactions with the database
+            // Model.I.newPin(img: <#T##UIImage#>, msg: "hello!!!")
+            // Upon delegate actions we need to take picture and invoke
+            // Model.I.newPin(img: <#T##UIImage#>, msg: <#T##String#>)
             
         } else {
             print("Please turn on location services or GPS")
@@ -88,24 +84,25 @@ class Start_Tracking: UIViewController {
         
         
     }
-
+   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func unwind_to_start_tracking(_ sender: UIStoryboardSegue){}
     
-    @IBAction func unwind_to_start_tracker(_ sender: UIStoryboardSegue){}
-    @IBAction func Camera(_ sender: UIButton){
-        let longitute = current_longtitude
-        performSegue(withIdentifier: "datapass", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let vc = segue.destination as! CameraLogic
-        vc.longitude_ = self.current_longtitude
-        
-    }
+//    @IBAction func Camera(_ sender: Any){
+//        //let finalcoord = self.long
+//        performSegue(withIdentifier: "datapass", sender: self)
+//    }
+//    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+//        let vc = segue.destination as! CameraDelegate
+//        vc.longtitude = "Hello!"
+//        
+//    }
     
 }
 
@@ -114,20 +111,30 @@ extension Start_Tracking:  CLLocationManagerDelegate {
     //  Created by Aman Aggarwal on 03/03/18.
     //  Copyright © 2018 Aman Aggarwal. All rights reserved.
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
-        
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        var local_value : CLLocationCoordinate2D = manager.location!.coordinate
     
         let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002))
         
         self.map_view.setRegion(region, animated: true)
         
-        // Sets global declared variables to location distances
+        locationManager.stopUpdatingLocation()
+        
+        //print current location via longitude and latitude
         if let location = locations.first{
-            current_latitude? = location.coordinate.latitude
-            current_longtitude? = location.coordinate.longitude
+            long = location.coordinate.longitude
+            lat = location.coordinate.latitude
+            
+            print("From func LocationManager", "\(long)", " ", "\(lat)")
+            // print("From 'func locationManager' ", location.coordinate.latitude)
+            // print("From 'func locationManager' ", location.coordinate.longitude)
+            
+            // let typecheck = type(of: location.coordinate.latitude)
+            // print("location.coordinte.latitude is of type: '\(typecheck)'")
+            // location.coordinate.latitude and longitude is of type "Double"
+            
         }
-        
-        
+        //print("Local Value", local_value)
         
     }
     
@@ -135,5 +142,13 @@ extension Start_Tracking:  CLLocationManagerDelegate {
         print("Unable to access your current location")
     }
     
-   
+    
+    
 }
+
+
+
+
+
+
+

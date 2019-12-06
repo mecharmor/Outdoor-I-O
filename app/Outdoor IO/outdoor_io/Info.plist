@@ -6,6 +6,8 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>In order for user to utilize Outdoor I.O, we would need you to use your location</string>
+	<key>NSCameraUsageDescription</key>
+	<string>In order for user to utilize Outdoor I.O camera functions, we need to use your camera</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
