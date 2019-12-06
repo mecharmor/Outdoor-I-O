@@ -20,6 +20,7 @@
 		CF00AD9DA04149B6710A4F35 /* Pods_outdoor_io.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1578FC70D618832B83C47F /* Pods_outdoor_io.framework */; };
 		E4425C932394CB87001FFDBB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4425C922394CB87001FFDBB /* Model.swift */; };
 		E4425C952394CBA1001FFDBB /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4425C942394CBA1001FFDBB /* Shared.swift */; };
+		FB8C3F18239AFF4400F9CE5E /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8C3F17239AFF4400F9CE5E /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		5893C57E4B6469AD11A6A709 /* Pods-outdoor_io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outdoor_io.debug.xcconfig"; path = "Target Support Files/Pods-outdoor_io/Pods-outdoor_io.debug.xcconfig"; sourceTree = "<group>"; };
 		E4425C922394CB87001FFDBB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E4425C942394CBA1001FFDBB /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		FB8C3F17239AFF4400F9CE5E /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraController.swift; path = ../../../../../../../Volumes/SaveHere/CameraDemoStarter/CameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +117,9 @@
 				20A98EA5238C5955004747D1 /* ViewController.swift */,
 				20E23454238C8B6600519F9E /* Settings.swift */,
 				20E23456238C8BC600519F9E /* History.swift */,
-				42E7F04923972129004E253C /* CameraDelegate.swift */,
 				20E23458238C8C2600519F9E /* Start_Tracking.swift */,
+				42E7F04923972129004E253C /* CameraDelegate.swift */,
+				FB8C3F17239AFF4400F9CE5E /* CameraController.swift */,
 				20A98EA7238C5955004747D1 /* Main.storyboard */,
 				20A98EAA238C5957004747D1 /* Assets.xcassets */,
 				20A98EAC238C5957004747D1 /* LaunchScreen.storyboard */,
@@ -320,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8C3F18239AFF4400F9CE5E /* CameraController.swift in Sources */,
 				E4425C952394CBA1001FFDBB /* Shared.swift in Sources */,
 				20E23459238C8C2600519F9E /* Start_Tracking.swift in Sources */,
 				20E23455238C8B6600519F9E /* Settings.swift in Sources */,
@@ -501,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = outdoor_io/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,7 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = outdoor_io/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
