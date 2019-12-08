@@ -74,7 +74,7 @@ class Start_Tracking: UIViewController {
             locationManager.startUpdatingLocation()
             
             //Model.I.newTrip(name: "Trip 1") // Sample Interactions with the database
-            // Model.I.newPin(img: <#T##UIImage#>, msg: "hello!!!")
+            // Model.I.newPin(img: T##UIImage, msg: "hello!!!")
             // Upon delegate actions we need to take picture and invoke
             // Model.I.newPin(img: <#T##UIImage#>, msg: <#T##String#>)
             
@@ -84,7 +84,6 @@ class Start_Tracking: UIViewController {
         
         
     }
-   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -125,7 +124,7 @@ extension Start_Tracking:  CLLocationManagerDelegate {
             long = location.coordinate.longitude
             lat = location.coordinate.latitude
             
-            print("From func LocationManager", "\(long)", " ", "\(lat)")
+            //print("From func LocationManager", "\(long)", " ", "\(lat)")
             // print("From 'func locationManager' ", location.coordinate.latitude)
             // print("From 'func locationManager' ", location.coordinate.longitude)
             
@@ -145,10 +144,5 @@ extension Start_Tracking:  CLLocationManagerDelegate {
     
     
 }
-
-
-
-
-
 
 

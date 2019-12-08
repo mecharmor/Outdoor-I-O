@@ -2,4 +2,5 @@ target 'outdoor_io' do
   use_frameworks!
 
   pod 'EasyStash'
+  pod 'DKCamera'
 end

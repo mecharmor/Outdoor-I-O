@@ -11,7 +11,7 @@ import UIKit
 class CameraDelegate: UIViewController {
     
         
-    let cameraController = CameraController()
+    //let cameraController = CameraController()
     
     @IBOutlet fileprivate var captureButton: UIButton!
     
@@ -41,17 +41,17 @@ extension CameraDelegate {
         
         styleCaptureButton()
 
-        func configureCameraController() {
-            cameraController.prepare {(error) in
-                if let error = error {
-                    print(error)
-                }
+//        func configureCameraController() {
+//            cameraController.prepare {(error) in
+//                if let error = error {
+//                    print(error)
+//                }
+//
+//                try? self.cameraController.displayPreview(on: self.capturePreviewView)
+//            }
+//        }
          
-                try? self.cameraController.displayPreview(on: self.capturePreviewView)
-            }
-        }
-         
-        configureCameraController()
+        //configureCameraController()
     }
 }
 
