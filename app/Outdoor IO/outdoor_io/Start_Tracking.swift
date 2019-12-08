@@ -111,7 +111,7 @@ extension Start_Tracking:  CLLocationManagerDelegate {
     //  Copyright © 2018 Aman Aggarwal. All rights reserved.
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        var local_value : CLLocationCoordinate2D = manager.location!.coordinate
+        //var local_value : CLLocationCoordinate2D = manager.location!.coordinate
     
         let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002))
         

@@ -124,7 +124,7 @@
                                 </constraints>
                                 <state key="normal" title="Camera" image="Pins"/>
                                 <connections>
-                                    <segue destination="k7J-0X-qx1" kind="presentation" identifier="datapass" id="2p1-uT-mLg"/>
+                                    <segue destination="z8v-2X-QXG" kind="show" id="o1f-td-Y4B"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -153,70 +153,48 @@
             <point key="canvasLocation" x="1856.8" y="-656.22188905547227"/>
         </scene>
         <!--Camera Delegate-->
-        <scene sceneID="CGR-Ic-BXL">
+        <scene sceneID="816-mr-U6t">
             <objects>
-                <viewController id="k7J-0X-qx1" customClass="CameraDelegate" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ivX-Ge-5SU">
+                <viewController id="z8v-2X-QXG" customClass="CameraDelegate" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fiu-51-KNs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFR-wW-ekR">
-                                <rect key="frame" x="160" y="597" width="55" height="30"/>
-                                <state key="normal" title="Capture"/>
-                            </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWR-Vm-788">
-                                <rect key="frame" x="0.0" y="45" width="375" height="513"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="477-3q-0f1">
+                                <rect key="frame" x="16" y="66" width="343" height="452"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO9-GV-nBX">
-                                        <rect key="frame" x="277" y="458" width="79" height="30"/>
-                                        <state key="normal" title="photoMode"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai6-8u-Sm1">
-                                        <rect key="frame" x="32" y="458" width="34" height="30"/>
-                                        <state key="normal" title="flash"/>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Camera Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOF-JV-OHv">
+                                        <rect key="frame" x="102" y="210" width="139" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="iO9-GV-nBX" secondAttribute="trailing" constant="16" id="dWC-9x-g5Z"/>
-                                </constraints>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWZ-KH-ytn">
-                                <rect key="frame" x="282" y="597" width="77" height="30"/>
-                                <state key="normal" title="videoMode"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5c-Tc-5Hr">
-                                <rect key="frame" x="16" y="597" width="97" height="30"/>
-                                <state key="normal" title="toggleCamera"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-Ld-vtx">
+                                <rect key="frame" x="144" y="542" width="86" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Camera"/>
+                                <connections>
+                                    <action selector="cam_pressed:" destination="z8v-2X-QXG" eventType="touchUpInside" id="DwD-74-mfI"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="H2D-Ks-ui4" firstAttribute="bottom" secondItem="iFR-wW-ekR" secondAttribute="bottom" constant="20" id="5kv-JL-ei1"/>
-                            <constraint firstItem="iFR-wW-ekR" firstAttribute="leading" secondItem="W5c-Tc-5Hr" secondAttribute="trailing" constant="47" id="BYb-RC-UXZ"/>
-                            <constraint firstItem="H2D-Ks-ui4" firstAttribute="bottom" secondItem="CWZ-KH-ytn" secondAttribute="bottom" constant="20" id="D1j-hm-9cA"/>
-                            <constraint firstItem="H2D-Ks-ui4" firstAttribute="bottom" secondItem="W5c-Tc-5Hr" secondAttribute="bottom" constant="20" id="JOD-il-CFE"/>
-                            <constraint firstItem="W5c-Tc-5Hr" firstAttribute="leading" secondItem="H2D-Ks-ui4" secondAttribute="leading" constant="16" id="TtK-oq-R12"/>
-                            <constraint firstItem="ai6-8u-Sm1" firstAttribute="leading" secondItem="H2D-Ks-ui4" secondAttribute="leading" constant="16" id="c24-lW-ykA"/>
-                            <constraint firstItem="CWZ-KH-ytn" firstAttribute="top" secondItem="iO9-GV-nBX" secondAttribute="bottom" constant="64" id="cXy-9e-D2N"/>
-                            <constraint firstItem="CWZ-KH-ytn" firstAttribute="leading" secondItem="iFR-wW-ekR" secondAttribute="trailing" constant="67" id="hPS-Hd-I5t"/>
-                            <constraint firstItem="H2D-Ks-ui4" firstAttribute="trailing" secondItem="CWZ-KH-ytn" secondAttribute="trailing" constant="16" id="pHm-n2-WE1"/>
-                            <constraint firstItem="W5c-Tc-5Hr" firstAttribute="top" secondItem="ai6-8u-Sm1" secondAttribute="bottom" constant="64" id="t5j-F2-sRa"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="H2D-Ks-ui4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2hR-ZQ-ZsM"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Hk9-uB-gqC"/>
                     <connections>
-                        <outlet property="captureButton" destination="iFR-wW-ekR" id="LaS-Kx-EmV"/>
-                        <outlet property="capturePreviewView" destination="DWR-Vm-788" id="owG-i1-Mbt"/>
-                        <outlet property="photoModeButton" destination="iO9-GV-nBX" id="ZCh-Be-xlK"/>
-                        <outlet property="toggleCameraButton" destination="W5c-Tc-5Hr" id="4Hb-VV-SWA"/>
-                        <outlet property="toggleFlashButton" destination="ai6-8u-Sm1" id="kyl-ML-0hG"/>
-                        <outlet property="videoModeButton" destination="CWZ-KH-ytn" id="E4R-U1-dFp"/>
+                        <outlet property="cam_view" destination="477-3q-0f1" id="4u8-Q8-jcK"/>
+                        <outlet property="cameraViewText" destination="pOF-JV-OHv" id="WiZ-uk-G2z"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hQf-DU-ToM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFc-yH-fZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3173.5999999999999" y="-656.22188905547227"/>
+            <point key="canvasLocation" x="3217" y="-656"/>
         </scene>
         <!--History-->
         <scene sceneID="Yrw-EB-RD3">
@@ -298,6 +276,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Camera" width="85.5" height="62"/>
         <image name="Pins" width="87.5" height="64"/>
         <image name="tools" width="1125" height="750"/>
         <image name="wilderness1" width="1890" height="967"/>
