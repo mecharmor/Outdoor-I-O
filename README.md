@@ -1,5 +1,5 @@
 <h3 align="center">
-Hunter Helper IOS App
+Outdoor I/O
 </h3>
 
 ## Team Members
