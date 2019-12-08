@@ -1,16 +1,20 @@
 PODS:
+  - DKCamera (1.6.6)
   - EasyStash (1.0.0)
 
 DEPENDENCIES:
+  - DKCamera
   - EasyStash
 
 SPEC REPOS:
   trunk:
+    - DKCamera
     - EasyStash
 
 SPEC CHECKSUMS:
+  DKCamera: d6fad4db4b25c00eefe6904e9c86a926034d0c62
   EasyStash: f42c709eaaa0cd83167163998b0746b4defb0015
 
-PODFILE CHECKSUM: 66cb08049575164e687b5188fba7d2b84134b107
+PODFILE CHECKSUM: 3b76f37710285a9c4524193531a2912efa5f4916
 
 COCOAPODS: 1.8.4
