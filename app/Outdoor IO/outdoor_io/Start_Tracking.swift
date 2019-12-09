@@ -51,6 +51,73 @@ class Start_Tracking: UIViewController {
         view.backgroundColor = UIColor.init(red: 46/255, green: 64/255, blue: 56/255, alpha: 1)
     }
     
+    func createTrip(){
+        //code TODO
+    }
+    
+    func showInputDialog(title:String? = nil,
+                         subtitle:String? = nil,
+                         actionTitle:String? = "Add",
+                         inputPlaceholder:String? = nil,
+                         inputKeyboardType:UIKeyboardType = UIKeyboardType.default,
+                         cancelHandler: ((UIAlertAction) -> Swift.Void)? = nil,
+                         actionHandler: ((_ text: String?) -> Void)? = nil) {
+
+        let alert = UIAlertController(title: title, message: subtitle, preferredStyle: .alert)
+        alert.addTextField { (textField:UITextField) in
+            textField.placeholder = inputPlaceholder
+            textField.keyboardType = inputKeyboardType
+        }
+        alert.addAction(UIAlertAction(title: actionTitle, style: .destructive, handler: { (action:UIAlertAction) in
+            guard let textField =  alert.textFields?.first else {
+                actionHandler?(nil)
+                return
+            }
+            actionHandler?(textField.text)
+        }))
+//        alert.addAction(UIAlertAction(title: cancelTitle, style: .cancel, handler: cancelHandler))
+
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func promptForTrip() {
+        showInputDialog(title: "Name Your Trip",
+                        subtitle: "Please enter the name of your trip.",
+                        actionTitle: "New",
+                        inputPlaceholder: "Trip Name e.g Hike in Sierras",
+                        inputKeyboardType: .default){ (input:String?) in
+                            guard let name = input else {
+                                self.promptForTrip()
+                                return
+                            }
+                            if name != "" {
+                                print("New Trip: \(name)")
+                                Model.I.newTrip(name: name)
+                                return
+                            }
+                            self.promptForTrip()
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if Model.I.isTripInProgress() == false {
+            self.promptForTrip()
+        }
+        
+//        guard let trips = Model.I.getAllTrips() else {
+//            print("No Trips to retrieve")
+//            return
+//        }
+//        for trip in trips {
+//            guard let pins = trip.pins else {
+//                continue
+//            }
+//            for pin in pins {
+//                print("THUMBNAIL: \(pin.thumb!)")
+//            }
+//        }
+    }
+    
     // --- Viewer --- //
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -144,5 +211,3 @@ extension Start_Tracking:  CLLocationManagerDelegate {
     
     
 }
-
-

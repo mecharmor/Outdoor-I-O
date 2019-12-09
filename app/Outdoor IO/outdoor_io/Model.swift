@@ -28,6 +28,13 @@ final class Model {
         self.storage.save(val: self.trip, key: self.dataKey)
         self.trip = Trip(name: name)
     }
+    
+    func isTripInProgress() -> Bool {
+        guard let _ = self.trip else {
+            return false
+        }
+        return true
+    }
 
     func newPin(img: UIImage, msg: String = "") -> Bool {
         guard let coord = Shared.I.getCoordinates() else {

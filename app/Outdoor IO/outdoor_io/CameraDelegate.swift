@@ -10,9 +10,7 @@ import UIKit
 import SwiftyCam
 
 class CameraDelegate: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
-
-    @IBOutlet var cam_view: UIView!
-    @IBOutlet weak var cameraViewText: UILabel!
+    
     @IBOutlet weak var cameraButton: UIButton!
     
     override func viewDidLoad() {
@@ -23,6 +21,7 @@ class CameraDelegate: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
         maxZoomScale = 2.0
         shouldUseDeviceOrientation = true
         doubleTapCameraSwitch = true
+        defaultCamera = .rear
     }
     
 //    @IBAction func back_pressed(_ sender: Any) {
@@ -39,19 +38,12 @@ class CameraDelegate: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
         print("attempted to take photo with SwiftyCam")
          // Called when takePhoto() is called or if a SwiftyCamButton initiates a tap gesture
          // Returns a UIImage captured from the current session
-        
-        //            guard let img = image else{
-        //                print("No Image taken!")
-        //                return
-        //            }
-                    
-        //            if Model.I.newPin(img: img) {
-        //                print("Successfully saved pin!")
-        //            }else {
-        //                print("Failed to save pin!")
-        //            }
+        if Model.I.newPin(img: photo) {
+            print("Successfully saved pin!")
+        }else {
+            print("Failed to save pin!")
+        }
     }
-    
     
 }
 

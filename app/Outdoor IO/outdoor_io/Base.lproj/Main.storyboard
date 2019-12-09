@@ -160,16 +160,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IQ-XB-8yR">
-                                <rect key="frame" x="151" y="427" width="86" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IQ-XB-8yR">
+                                <rect key="frame" x="144" y="573" width="86" height="62"/>
                                 <state key="normal" image="Camera"/>
                                 <connections>
                                     <action selector="cam_pressed:" destination="z8v-2X-QXG" eventType="touchUpInside" id="sMn-2b-Oyb"/>
+                                    <segue destination="uXN-In-ewH" kind="unwind" unwindAction="unwind_to_start_tracking:" id="oT1-qc-qWM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2hR-ZQ-ZsM" firstAttribute="bottom" secondItem="4IQ-XB-8yR" secondAttribute="bottom" constant="12" id="CUs-3h-eL6"/>
+                            <constraint firstItem="4IQ-XB-8yR" firstAttribute="leading" secondItem="2hR-ZQ-ZsM" secondAttribute="leading" constant="144" id="ZUJ-P1-mv9"/>
+                            <constraint firstItem="4IQ-XB-8yR" firstAttribute="top" secondItem="2hR-ZQ-ZsM" secondAttribute="top" constant="503" id="ejK-LF-lWr"/>
+                            <constraint firstItem="2hR-ZQ-ZsM" firstAttribute="trailing" secondItem="4IQ-XB-8yR" secondAttribute="trailing" constant="145" id="i0n-A2-0Ct"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2hR-ZQ-ZsM"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hk9-uB-gqC"/>
@@ -178,6 +184,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tFc-yH-fZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="uXN-In-ewH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3217" y="-656"/>
         </scene>
