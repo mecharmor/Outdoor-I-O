@@ -18,6 +18,7 @@ Type: Terminal
 Click: Terminal App 
 From Terminal type: git clone https://github.com/mecharmor/CSC690-IOS-APP
 From Finder: Open project folder
+From Terminal type: pod install
 From Finder: Double click on .xcodeproj file
 ```
 
