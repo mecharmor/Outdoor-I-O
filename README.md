@@ -1,9 +1,37 @@
 # Outdoor I/O
 ![logo](https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/logo.png)
 
+## What's Outdoor I/O?
+ - This is an IOS App Developed in Xcode `8.0`, IOS Version `12.0` and Swift Version `4.2`
+ - The purpose of this app is to provide offline usability for users who hike/hunt in remote locations that do not have internet connection
+ - Users have the ability to take photos of their adventures while the app handles the location/pathing of each photo taken.
+
 ## Team Members
 - Cory Lewis
 - Roderic Kong
+
+# Getting Started
+> On Mac **ONLY**
+```
+Shortcut: [Command + Space] to open Spotlight search
+Type: Terminal
+Click: Terminal App 
+From Terminal type: git clone https://github.com/mecharmor/CSC690-IOS-APP
+From Finder: Open project folder
+From Finder: Double click on .xcodeproj file
+```
+
+### Getting Started Extra Notes
+```
+(After clicking .xcodeproj file....)
+if on the top left, you see a something like "Base sdk missing"
+Double click on the first item in the three
+Go to tag build
+Select a sdk for the Base SDK
+Close the opened popup
+Click on build an run
+If you have error, you should see a red icon on the right bottom
+```
 
 ## Features
 - Must Have Features ❌
@@ -25,53 +53,18 @@
         - clear trips ❌
         - export photos to use elsewhere? ❌
 
-## What's Hunter Helper?
-
-Hunter Helper is an IOS app designed for hunters who need an offline app to keep records of hunting paths and notes regarding scopes and the adjustments needed when hunting at various distances and terrains.
-
 - Use **Core Location to track hunting path** (https://developer.apple.com/documentation/corelocation)
 - User can **Add a weapon to their dashboard and modify attributes**
 - User can **Start Hunt** so their traveled path will be saved so they can playback the trail they took
 
-
-## Functionality
-- 1. Ability to keep track of your hunt along with which firearm used.
-- 2. History of firearms used.
-- 3. Lists the stats of your firearms (i.e bullet caliber, brand, type of gun, model of gun, attachments, special functionalities of the gun etc.) 
-- 4. Notepad for storing notes, and records.
-
-## Getting Started
-> On Mac **ONLY**
-```
-Shortcut: [Command + Space] to open Spotlight search
-Type: Terminal
-Click: Terminal App 
-From Terminal type: git clone https://github.com/mecharmor/Hunter-IOS-App
-From Finder: Open project folder
-From Finder: Double click on .xcodeproj file
-```
-
-### Getting Started Extra Notes
-```
-(After clicking .xcodeproj file....)
-if on the top left, you see a something like "Base sdk missing"
-Double click on the first item in the three
-Go to tag build
-Select a sdk for the Base SDK
-Close the opened popup
-Click on build an run
-If you have error, you should see a red icon on the right bottom
-```
-
 ## Outdoor I/O Mockups
-<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/drawing.jpg" alt="" width="200px" height="auto">
-<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu.png" alt="" width="200px" height="auto">
-<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu_2.png" alt="" width="200px" height="auto">
-<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/history.png" alt="" width="200px" height="auto">
-<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu_color.png" alt="" width="200px" height="auto">
-<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/history_pin_details.png" alt="" width="200px" height="auto">
-<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/" alt="" width="200px" height="auto">
-
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/drawing.jpg" alt="" width="300px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu.png" alt="" width="300px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu_2.png" alt="" width="300px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/history.png" alt="" width="300px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu_color.png" alt="" width="300px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/history_pin_details.png" alt="" width="300px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/" alt="" width="300px" height="auto">
 
 ## Feedback
 For any other questions about this repo in general please reach out to [**@mecharmor**](https://github.com/mecharmor) on Github. <br>
