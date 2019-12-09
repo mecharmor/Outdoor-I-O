@@ -42,6 +42,7 @@ If you have error, you should see a red icon on the right bottom
     - Fetch GPS Coordinates and Save in Persistent storage ✔
     - Display all pins containing saved locations for trip ❌
     - Display History of all trips taken ❌
+    - Use **Core Location to path** (https://developer.apple.com/documentation/corelocation) ✔
     - Display map containing all pins from selected trip ❌
     - Shall allow users to view previous trips ❌
     - About Page  ❌
@@ -53,10 +54,6 @@ If you have error, you should see a red icon on the right bottom
     - Add Settings options for user such as ❌
         - clear trips ❌
         - export photos to use elsewhere? ❌
-
-- Use **Core Location to track hunting path** (https://developer.apple.com/documentation/corelocation)
-- User can **Add a weapon to their dashboard and modify attributes**
-- User can **Start Hunt** so their traveled path will be saved so they can playback the trail they took
 
 ## Outdoor I/O Mockups
 <img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/drawing.jpg" alt="" width="300px" height="auto">
