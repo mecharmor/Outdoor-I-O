@@ -8,40 +8,56 @@
 
 import UIKit
 
-class History: UIViewController {
-
-    @IBOutlet weak var Back: UIButton!
+class History: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableview: UITableView!
+    
+    let trips = Model.I.getAllTrips() ?? []
+    
+    var trip_selection: Trip? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        screen_backdrop()
-        button_settings()
-        // Do any additional setup after loading the view.
+
+        tableview.delegate = self
+        tableview.dataSource = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.trips.count
     }
-    
-}
 
-extension History{
-    
-    // --- button settings --- //
-    func button_settings() {
-        // button view definitions
-        Back.backgroundColor = UIColor.init(red: 46/255, green: 89/255, blue: 70/255, alpha: 1)
-        Back.layer.cornerRadius = 5.0
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        guard indexPath.row < self.trips.count else {
+            return cell
+        }
+        let trip = self.trips[indexPath.row]
+        cell.textLabel?.text = trip.name
+        for pin in trip.pins ?? [] {
+            cell.imageView?.image = pin.getThumb()
+            break // only one image needed for preview
+        }
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.row < trips.count else {
+            tableView.deselectRow(at: indexPath, animated: true)
+            return
+        }
+        self.trip_selection = trips[indexPath.row]
+        guard let _ = self.trip_selection?.pins else {
+            tableView.deselectRow(at: indexPath, animated: true)
+            return
+        }
+        performSegue(withIdentifier: "index_of_trip", sender: self)
     }
     
-    //--- backdrop settings --- //
-    func screen_backdrop() {
-        view.backgroundColor = UIColor.init(red: 46/255, green: 64/255, blue: 56/255, alpha: 1)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if(segue.identifier == "index_of_trip"){
+            let vc = segue.destination as! history_pin
+            vc.pins = self.trip_selection?.pins ?? []
+        }
     }
-    
-    
 }

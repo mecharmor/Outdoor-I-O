@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:History.swift">
+   </FileRef>
+   <FileRef
       location = "group:outdoor_io.xcodeproj">
    </FileRef>
    <FileRef

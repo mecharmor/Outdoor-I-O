@@ -20,7 +20,8 @@
 		CF00AD9DA04149B6710A4F35 /* Pods_outdoor_io.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1578FC70D618832B83C47F /* Pods_outdoor_io.framework */; };
 		E4425C932394CB87001FFDBB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4425C922394CB87001FFDBB /* Model.swift */; };
 		E4425C952394CBA1001FFDBB /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4425C942394CBA1001FFDBB /* Shared.swift */; };
-		E44A0F48239CB3D800777743 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44A0F47239CB3D800777743 /* CameraController.swift */; };
+		E4630FA8239E352800796A37 /* history_pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4630FA7239E352800796A37 /* history_pin.swift */; };
+		E4630FAA239E3AAE00796A37 /* history_pin_preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4630FA9239E3AAE00796A37 /* history_pin_preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,8 @@
 		5893C57E4B6469AD11A6A709 /* Pods-outdoor_io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outdoor_io.debug.xcconfig"; path = "Target Support Files/Pods-outdoor_io/Pods-outdoor_io.debug.xcconfig"; sourceTree = "<group>"; };
 		E4425C922394CB87001FFDBB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E4425C942394CBA1001FFDBB /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
-		E44A0F47239CB3D800777743 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		E4630FA7239E352800796A37 /* history_pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = history_pin.swift; sourceTree = "<group>"; };
+		E4630FA9239E3AAE00796A37 /* history_pin_preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = history_pin_preview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +127,8 @@
 				20A98EAF238C5957004747D1 /* Info.plist */,
 				E4425C922394CB87001FFDBB /* Model.swift */,
 				E4425C942394CBA1001FFDBB /* Shared.swift */,
-				E44A0F47239CB3D800777743 /* CameraController.swift */,
+				E4630FA7239E352800796A37 /* history_pin.swift */,
+				E4630FA9239E3AAE00796A37 /* history_pin_preview.swift */,
 			);
 			path = outdoor_io;
 			sourceTree = "<group>";
@@ -326,9 +329,10 @@
 				E4425C952394CBA1001FFDBB /* Shared.swift in Sources */,
 				20E23459238C8C2600519F9E /* Start_Tracking.swift in Sources */,
 				20E23455238C8B6600519F9E /* Settings.swift in Sources */,
-				E44A0F48239CB3D800777743 /* CameraController.swift in Sources */,
 				42E7F04A23972129004E253C /* CameraDelegate.swift in Sources */,
 				20A98EA6238C5955004747D1 /* ViewController.swift in Sources */,
+				E4630FAA239E3AAE00796A37 /* history_pin_preview.swift in Sources */,
+				E4630FA8239E352800796A37 /* history_pin.swift in Sources */,
 				E4425C932394CB87001FFDBB /* Model.swift in Sources */,
 				20E23457238C8BC600519F9E /* History.swift in Sources */,
 				20A98EA4238C5955004747D1 /* AppDelegate.swift in Sources */,
