@@ -29,8 +29,8 @@ final class Shared {
     }
 
     func convertImageToBase64(image: UIImage) -> String { // Convert UIImage to a base64 representation
-        let imageData = UIImagePNGRepresentation(image)!
-        return imageData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+        let imageData = image.pngData() //UIImagePNGRepresentation(image)!
+        return (imageData?.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters))!
     }
 
     func convertBase64ToImage(imageString: String) -> UIImage { // Convert a base64 representation to a UIImage

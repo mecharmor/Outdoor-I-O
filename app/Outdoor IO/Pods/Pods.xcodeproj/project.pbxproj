@@ -8,91 +8,126 @@
 
 /* Begin PBXBuildFile section */
 		0B2E126497D83D4D7901E41121F22F07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E724C2479D4F6C1BDA38D8C4F0D8E6F /* Foundation.framework */; };
-		1930236805530A01D06A96B55D395297 /* Storage+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E88C77CC546E6FEFA7C72D6F7D3683 /* Storage+Data.swift */; };
-		21D4FD00ACD6550C46DE4C59D5C46962 /* DKCameraLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42AA17A55BD058CF29AC06E31C3D01 /* DKCameraLocationManager.swift */; };
-		28BB0D99AEA10915BABCCBEB6FC28B28 /* Pods-outdoor_io-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C15194AA3DAC1E0FD69A31CB5A0E7E7 /* Pods-outdoor_io-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34AA7CA602003A58D87277494E3D350B /* DKCameraResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A93B21C15243574AAE80B41DF9A4E /* DKCameraResource.swift */; };
-		4F02EF9F2464289B452A16DE960A94A3 /* DKCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B9E7FFE08CF4F460BF862C845AD8F9 /* DKCamera-dummy.m */; };
+		0DBAA7571AEF3A366B1DD125FDFBB374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E724C2479D4F6C1BDA38D8C4F0D8E6F /* Foundation.framework */; };
+		1930236805530A01D06A96B55D395297 /* Storage+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B7DD332632FBCFD75331E6FD84F7FF /* Storage+Data.swift */; };
+		1C9C81EEF94905C32945E2490CAC1872 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987C5BB48EADF8AB2319E107423B1123 /* SwiftyCamButton.swift */; };
+		21D4FD00ACD6550C46DE4C59D5C46962 /* DKCameraLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B5BDDD91B47FD56CEDB909EE59474 /* DKCameraLocationManager.swift */; };
+		277C319FE4353FFE162C9B82F7DC63CA /* SwiftyCam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2BE8352AA51BC211CD9F8986BBE2E71 /* SwiftyCam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29148F5372151421ACABF3D332E39C5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E724C2479D4F6C1BDA38D8C4F0D8E6F /* Foundation.framework */; };
+		2C4C154110AAFCA33627A76B05A4FADA /* SwiftyCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D105B061E079121CCD39EB979415FDF /* SwiftyCamViewController.swift */; };
+		32F04AC189A7CD4DB752B001C4BC956C /* Pods-outdoor_io-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE5979EF4988C6A7880FFACE33D94C5 /* Pods-outdoor_io-dummy.m */; };
+		34AA7CA602003A58D87277494E3D350B /* DKCameraResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10530059E3C0B2DC9A1D8C595A010D46 /* DKCameraResource.swift */; };
+		4F02EF9F2464289B452A16DE960A94A3 /* DKCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5016B5478AFF083F1CEC62902850EA5D /* DKCamera-dummy.m */; };
 		5364DFC4743B4AA77C864168FE62BE89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E221D5B094E0530EBFB02826BA4A04 /* UIKit.framework */; };
-		57CBDD8F2C663E878F33669A648C3D6E /* DKCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01912D8A0F2BC0361E8C2F325724C179 /* DKCamera.swift */; };
-		6AF5CB981D342B058BFDABB899043557 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B00CA092493F76D4ECEF24819B38DB8 /* Utils.swift */; };
+		57CBDD8F2C663E878F33669A648C3D6E /* DKCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66652D67D442B2564BF1E9BCD9D09114 /* DKCamera.swift */; };
+		6AF5CB981D342B058BFDABB899043557 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD02D62C8BE529EFDBF46FC2FD7E5390 /* Utils.swift */; };
+		71744999BCD885CD514F8B636D385DAE /* SwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C399B8FE8AC010297CD7D119A0E1D7A4 /* SwiftyCamViewControllerDelegate.swift */; };
 		7566634CEC0953EE991E5396FE1FCEB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1D09C662043E645B07CD36A4CDCD42 /* AVFoundation.framework */; };
-		78098F7A68D0C9D171D3D0BB591FA03C /* Pods-outdoor_io-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE5979EF4988C6A7880FFACE33D94C5 /* Pods-outdoor_io-dummy.m */; };
 		7D85C7BC9AB79AC1A5D7467F0C5D254B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E724C2479D4F6C1BDA38D8C4F0D8E6F /* Foundation.framework */; };
-		865514B88BC962B15DE7B91C6E298A2B /* DKCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6718A32045065B0BD2D321A79CEA9BD /* DKCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB2593C0274CDCB087D4CBE2AF248070 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71943185CDB4508F3C67BA8C3D913662 /* Options.swift */; };
-		C0CF6F289F82E33B7C0F9DDBCD1F929B /* Storage+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11508B1FB7E2F4F04CC58D6177BA02 /* Storage+Image.swift */; };
+		865514B88BC962B15DE7B91C6E298A2B /* DKCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB155BF99958ECCD93244B0CE372DC3 /* DKCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B306E07AA4A70BF341825E72608BD5B0 /* Pods-outdoor_io-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C15194AA3DAC1E0FD69A31CB5A0E7E7 /* Pods-outdoor_io-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73A69AD6E452E16DDB0709E1BAE4C9E /* SwiftyCam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD012A7FE837BCF1B6CDDFD50E52EB9 /* SwiftyCam-dummy.m */; };
+		BB2593C0274CDCB087D4CBE2AF248070 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27890C38B26E6B8F2E4BE66B156E3376 /* Options.swift */; };
+		C0CF6F289F82E33B7C0F9DDBCD1F929B /* Storage+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E415AB55580BDE414B956AB0B8F154D5 /* Storage+Image.swift */; };
 		C1C5FB3A28FAC1CD3D1B9CE709867AF2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C2A28207EB59750D1643DFFD725C3D /* CoreMotion.framework */; };
-		C281A069B532593CC149D6F489E22ED3 /* Storage+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA9E1890B5178F65DFDBC3824B7150 /* Storage+Info.swift */; };
-		CF88B02E836D5231BAD2A374D109EC43 /* EasyStash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8A14F8AD7C717F9DE97EADBD5A24B7 /* EasyStash-dummy.m */; };
-		D4069005E30F369726D5FB338736C34E /* EasyStash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE71D12CA41BA43DEAC403E2299138CC /* EasyStash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEE4250D25793ED097CE2C6033BA388A /* DKCameraResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E88FEE2DEE55BB471A61D6C4A0FAAD79 /* DKCameraResource.bundle */; };
-		EA31A9B98F3A4F729BF8C7D2D1A7E1CD /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C812203303936606E9AE198C62CDDD /* Storage.swift */; };
-		EF9C13621F719E2647A89B1588AC2970 /* Storage+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276C4ED855145973149B62799145C5D /* Storage+Codable.swift */; };
-		F6A2F24CEF6716882BDB6C9559FC85B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E724C2479D4F6C1BDA38D8C4F0D8E6F /* Foundation.framework */; };
+		C281A069B532593CC149D6F489E22ED3 /* Storage+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D248E57239BA0283220554787AFD0 /* Storage+Info.swift */; };
+		C4D2F97BEB89870CD40015E2959B879C /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAFFE509C71D50B4207CF1A6A258462 /* PreviewView.swift */; };
+		CF88B02E836D5231BAD2A374D109EC43 /* EasyStash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA42592C085C0E5AF86098612CE9068 /* EasyStash-dummy.m */; };
+		D25D495E9272B58A334AB4D42AA034A6 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59EDF39FE9D31E2F2B177FB18A49C17 /* Orientation.swift */; };
+		D4069005E30F369726D5FB338736C34E /* EasyStash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 578D93138EAF4AF57CDB4E8F2138F238 /* EasyStash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEE4250D25793ED097CE2C6033BA388A /* DKCameraResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2226740BF2BD64820AAC413B45EA2253 /* DKCameraResource.bundle */; };
+		EA31A9B98F3A4F729BF8C7D2D1A7E1CD /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67985A4692D988D1231DB7D2E2E81241 /* Storage.swift */; };
+		EF9C13621F719E2647A89B1588AC2970 /* Storage+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F020B5CFAF2DE769889362BBFE6334E4 /* Storage+Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1BB256FEEBF7084DF5C9F7FEA23D902A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BF7B5D32C3320A2F8BDDE0FD741BF366;
-			remoteInfo = EasyStash;
-		};
-		43BE5C071C8D9D22A181463F4BEBB10B /* PBXContainerItemProxy */ = {
+		80820F0EDCB6AD043349D6EF8EF3835A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9E6A9737EF2909D1EB8FE2A056F27AF0;
 			remoteInfo = DKCamera;
 		};
+		851DDA0DD72D09CE8E1A1A8735EA0110 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D8AA920E37251A430220E5E4088BDA;
+			remoteInfo = SwiftyCam;
+		};
+		8B6DB20F1DC8B9DAB4E823A964ECF6AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF7B5D32C3320A2F8BDDE0FD741BF366;
+			remoteInfo = EasyStash;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01912D8A0F2BC0361E8C2F325724C179 /* DKCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCamera.swift; path = DKCamera/DKCamera.swift; sourceTree = "<group>"; };
-		071A93B21C15243574AAE80B41DF9A4E /* DKCameraResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCameraResource.swift; path = DKCamera/DKCameraResource.swift; sourceTree = "<group>"; };
-		106F5FEC2FB2C64E2273DAC3EAD6C8DE /* EasyStash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyStash-prefix.pch"; sourceTree = "<group>"; };
-		1B00CA092493F76D4ECEF24819B38DB8 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		10530059E3C0B2DC9A1D8C595A010D46 /* DKCameraResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCameraResource.swift; path = DKCamera/DKCameraResource.swift; sourceTree = "<group>"; };
+		127B074EDC741B04ADFA9DEC5206CE4A /* EasyStash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyStash-prefix.pch"; sourceTree = "<group>"; };
+		2226740BF2BD64820AAC413B45EA2253 /* DKCameraResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DKCameraResource.bundle; path = DKCamera/DKCameraResource.bundle; sourceTree = "<group>"; };
 		22E0A88D6BC7F4EFF190BC809E088AC0 /* Pods-outdoor_io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-outdoor_io.release.xcconfig"; sourceTree = "<group>"; };
-		3562A6EAECD1FA25A0E2F97CA638B1D3 /* EasyStash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyStash.modulemap; sourceTree = "<group>"; };
+		27890C38B26E6B8F2E4BE66B156E3376 /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = Sources/Options.swift; sourceTree = "<group>"; };
+		2BAFFE509C71D50B4207CF1A6A258462 /* PreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewView.swift; path = Source/PreviewView.swift; sourceTree = "<group>"; };
+		31DE21B080AC1053E7639DD98A9AEDE9 /* DKCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCamera-prefix.pch"; sourceTree = "<group>"; };
+		36B7DD332632FBCFD75331E6FD84F7FF /* Storage+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+Data.swift"; path = "Sources/Storage+Data.swift"; sourceTree = "<group>"; };
 		36C2A28207EB59750D1643DFFD725C3D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		3A0D248E57239BA0283220554787AFD0 /* Storage+Info.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+Info.swift"; path = "Sources/Storage+Info.swift"; sourceTree = "<group>"; };
+		3E768150FA66FFE3ACF2E7989507693B /* DKCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DKCamera.xcconfig; sourceTree = "<group>"; };
 		44B2B6B97EFA1AC984225155B8BB8D3C /* Pods-outdoor_io.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-outdoor_io.modulemap"; sourceTree = "<group>"; };
+		5016B5478AFF083F1CEC62902850EA5D /* DKCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKCamera-dummy.m"; sourceTree = "<group>"; };
+		505D6093B30A019CADD1ABD21AF60FCE /* EasyStash-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyStash-Info.plist"; sourceTree = "<group>"; };
+		578D93138EAF4AF57CDB4E8F2138F238 /* EasyStash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyStash-umbrella.h"; sourceTree = "<group>"; };
 		59C4170308B728B38ACE42B19D72CCD7 /* Pods_outdoor_io.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_outdoor_io.framework; path = "Pods-outdoor_io.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A9A62901A804F3FF3D18E87EDB5160C /* DKCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCamera-prefix.pch"; sourceTree = "<group>"; };
 		5C15194AA3DAC1E0FD69A31CB5A0E7E7 /* Pods-outdoor_io-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-outdoor_io-umbrella.h"; sourceTree = "<group>"; };
-		6276C4ED855145973149B62799145C5D /* Storage+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+Codable.swift"; path = "Sources/Storage+Codable.swift"; sourceTree = "<group>"; };
+		5D105B061E079121CCD39EB979415FDF /* SwiftyCamViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamViewController.swift; path = Source/SwiftyCamViewController.swift; sourceTree = "<group>"; };
+		615569F9F2AAC26C59CD508B7D19C0A3 /* SwiftyCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyCam.framework; path = SwiftyCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B3276D451C389A520F26AF9A9716AD /* EasyStash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyStash.modulemap; sourceTree = "<group>"; };
+		66652D67D442B2564BF1E9BCD9D09114 /* DKCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCamera.swift; path = DKCamera/DKCamera.swift; sourceTree = "<group>"; };
+		67985A4692D988D1231DB7D2E2E81241 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Storage.swift; sourceTree = "<group>"; };
+		686242C6C0561BAC7CA32EC8B5746740 /* SwiftyCam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyCam.modulemap; sourceTree = "<group>"; };
 		6E724C2479D4F6C1BDA38D8C4F0D8E6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		71943185CDB4508F3C67BA8C3D913662 /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = Sources/Options.swift; sourceTree = "<group>"; };
-		76C812203303936606E9AE198C62CDDD /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Storage.swift; sourceTree = "<group>"; };
 		78274479D792703CAD4F2EC9E7407E24 /* Pods-outdoor_io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-outdoor_io.debug.xcconfig"; sourceTree = "<group>"; };
-		79FA9E1890B5178F65DFDBC3824B7150 /* Storage+Info.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+Info.swift"; path = "Sources/Storage+Info.swift"; sourceTree = "<group>"; };
-		9676948592A6F6988293187F9B5EE56C /* DKCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DKCamera.xcconfig; sourceTree = "<group>"; };
-		9821BEB054FFC460AB65853DC313ED07 /* EasyStash-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyStash-Info.plist"; sourceTree = "<group>"; };
+		8C2B5BDDD91B47FD56CEDB909EE59474 /* DKCameraLocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCameraLocationManager.swift; path = DKCamera/DKCameraLocationManager.swift; sourceTree = "<group>"; };
+		91309FB38F9747B70B046B45E650F7B1 /* SwiftyCam-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-prefix.pch"; sourceTree = "<group>"; };
+		987C5BB48EADF8AB2319E107423B1123 /* SwiftyCamButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamButton.swift; path = Source/SwiftyCamButton.swift; sourceTree = "<group>"; };
+		9D2EA02479A9FCB1F4732F0D13E7A752 /* EasyStash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyStash.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC11508B1FB7E2F4F04CC58D6177BA02 /* Storage+Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+Image.swift"; path = "Sources/Storage+Image.swift"; sourceTree = "<group>"; };
 		AEB3FB1CD37C6AC91312E968F8E11362 /* Pods-outdoor_io-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-outdoor_io-Info.plist"; sourceTree = "<group>"; };
 		B9FA1339AB409F0AF0B201644DE8B48E /* EasyStash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyStash.framework; path = EasyStash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC8A14F8AD7C717F9DE97EADBD5A24B7 /* EasyStash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyStash-dummy.m"; sourceTree = "<group>"; };
-		BE71D12CA41BA43DEAC403E2299138CC /* EasyStash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyStash-umbrella.h"; sourceTree = "<group>"; };
-		C2B9E7FFE08CF4F460BF862C845AD8F9 /* DKCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKCamera-dummy.m"; sourceTree = "<group>"; };
+		BD02D62C8BE529EFDBF46FC2FD7E5390 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		C0C40D6204C16C25F21AE73D9E006A0B /* SwiftyCam-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyCam-Info.plist"; sourceTree = "<group>"; };
+		C2BE8352AA51BC211CD9F8986BBE2E71 /* SwiftyCam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-umbrella.h"; sourceTree = "<group>"; };
+		C399B8FE8AC010297CD7D119A0E1D7A4 /* SwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamViewControllerDelegate.swift; path = Source/SwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
 		CA033A3D1AF6D02A993B8BCEE298B0C4 /* DKCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DKCamera.framework; path = DKCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB42AA17A55BD058CF29AC06E31C3D01 /* DKCameraLocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCameraLocationManager.swift; path = DKCamera/DKCameraLocationManager.swift; sourceTree = "<group>"; };
 		CC896D445DF1087E2CE372CA6B93577E /* Pods-outdoor_io-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-outdoor_io-frameworks.sh"; sourceTree = "<group>"; };
+		CCD012A7FE837BCF1B6CDDFD50E52EB9 /* SwiftyCam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyCam-dummy.m"; sourceTree = "<group>"; };
 		CCE5979EF4988C6A7880FFACE33D94C5 /* Pods-outdoor_io-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-outdoor_io-dummy.m"; sourceTree = "<group>"; };
+		CD0ED5E39EECEF799C3A5C4293EA67CC /* DKCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DKCamera-Info.plist"; sourceTree = "<group>"; };
 		CE1D09C662043E645B07CD36A4CDCD42 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		D6718A32045065B0BD2D321A79CEA9BD /* DKCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCamera-umbrella.h"; sourceTree = "<group>"; };
-		D7E741A212D08ED60BF16A125BD5A6C3 /* DKCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DKCamera.modulemap; sourceTree = "<group>"; };
+		D59EDF39FE9D31E2F2B177FB18A49C17 /* Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Orientation.swift; path = Source/Orientation.swift; sourceTree = "<group>"; };
 		E2591110BEFB2E261AFC549FF967806C /* Pods-outdoor_io-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-outdoor_io-acknowledgements.plist"; sourceTree = "<group>"; };
-		E4E88C77CC546E6FEFA7C72D6F7D3683 /* Storage+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+Data.swift"; path = "Sources/Storage+Data.swift"; sourceTree = "<group>"; };
-		E88FEE2DEE55BB471A61D6C4A0FAAD79 /* DKCameraResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DKCameraResource.bundle; path = DKCamera/DKCameraResource.bundle; sourceTree = "<group>"; };
+		E415AB55580BDE414B956AB0B8F154D5 /* Storage+Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+Image.swift"; path = "Sources/Storage+Image.swift"; sourceTree = "<group>"; };
+		EDA42592C085C0E5AF86098612CE9068 /* EasyStash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyStash-dummy.m"; sourceTree = "<group>"; };
+		F020B5CFAF2DE769889362BBFE6334E4 /* Storage+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Storage+Codable.swift"; path = "Sources/Storage+Codable.swift"; sourceTree = "<group>"; };
 		F0E221D5B094E0530EBFB02826BA4A04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F22A1D27227991E494AFDEDF0995DF3D /* EasyStash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyStash.xcconfig; sourceTree = "<group>"; };
-		F5E4A06844A3DE6032FA03957083BFA9 /* DKCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DKCamera-Info.plist"; sourceTree = "<group>"; };
+		F33A9599771A48C50B25C017A001A40D /* DKCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DKCamera.modulemap; sourceTree = "<group>"; };
 		F78D8193A4BCFB03BA4047AB6FDA1D17 /* Pods-outdoor_io-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-outdoor_io-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FB78E451554BB93724F709EAAD11CFFC /* SwiftyCam.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyCam.xcconfig; sourceTree = "<group>"; };
+		FDB155BF99958ECCD93244B0CE372DC3 /* DKCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKCamera-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		43F575EF353D3221EFC065B05F4FC8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29148F5372151421ACABF3D332E39C5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		444E02892EBB2DBDA23E5A93D2AABAD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,6 +139,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94ABD1192C00108DF6B05E4A031B7EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DBAA7571AEF3A366B1DD125FDFBB374 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8436F8D5AB47EBED2FFFBB3C76209C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,42 +155,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCAF0CDC877420B321996247D9603622 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F6A2F24CEF6716882BDB6C9559FC85B0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B9383E43B4562975DB45AEC3C11BDA1 /* EasyStash */ = {
+		0F6A79012F316D5FFA7D9AB8AF9778D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71943185CDB4508F3C67BA8C3D913662 /* Options.swift */,
-				76C812203303936606E9AE198C62CDDD /* Storage.swift */,
-				6276C4ED855145973149B62799145C5D /* Storage+Codable.swift */,
-				E4E88C77CC546E6FEFA7C72D6F7D3683 /* Storage+Data.swift */,
-				AC11508B1FB7E2F4F04CC58D6177BA02 /* Storage+Image.swift */,
-				79FA9E1890B5178F65DFDBC3824B7150 /* Storage+Info.swift */,
-				1B00CA092493F76D4ECEF24819B38DB8 /* Utils.swift */,
-				2DD65383772703F2BE146B09D4A337AE /* Support Files */,
+				CA033A3D1AF6D02A993B8BCEE298B0C4 /* DKCamera.framework */,
+				B9FA1339AB409F0AF0B201644DE8B48E /* EasyStash.framework */,
+				59C4170308B728B38ACE42B19D72CCD7 /* Pods_outdoor_io.framework */,
+				615569F9F2AAC26C59CD508B7D19C0A3 /* SwiftyCam.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12CBABED6C507D22F185CD7592B7D774 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				686242C6C0561BAC7CA32EC8B5746740 /* SwiftyCam.modulemap */,
+				FB78E451554BB93724F709EAAD11CFFC /* SwiftyCam.xcconfig */,
+				CCD012A7FE837BCF1B6CDDFD50E52EB9 /* SwiftyCam-dummy.m */,
+				C0C40D6204C16C25F21AE73D9E006A0B /* SwiftyCam-Info.plist */,
+				91309FB38F9747B70B046B45E650F7B1 /* SwiftyCam-prefix.pch */,
+				C2BE8352AA51BC211CD9F8986BBE2E71 /* SwiftyCam-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyCam";
+			sourceTree = "<group>";
+		};
+		24335BE9D7018EEF126336E6E5F17860 /* EasyStash */ = {
+			isa = PBXGroup;
+			children = (
+				27890C38B26E6B8F2E4BE66B156E3376 /* Options.swift */,
+				67985A4692D988D1231DB7D2E2E81241 /* Storage.swift */,
+				F020B5CFAF2DE769889362BBFE6334E4 /* Storage+Codable.swift */,
+				36B7DD332632FBCFD75331E6FD84F7FF /* Storage+Data.swift */,
+				E415AB55580BDE414B956AB0B8F154D5 /* Storage+Image.swift */,
+				3A0D248E57239BA0283220554787AFD0 /* Storage+Info.swift */,
+				BD02D62C8BE529EFDBF46FC2FD7E5390 /* Utils.swift */,
+				2AB641AD88BB645DFB9DD5877A1A5206 /* Support Files */,
 			);
 			name = EasyStash;
 			path = EasyStash;
 			sourceTree = "<group>";
 		};
-		2DD65383772703F2BE146B09D4A337AE /* Support Files */ = {
+		29D1281429036474B0B414ECF5F33991 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3562A6EAECD1FA25A0E2F97CA638B1D3 /* EasyStash.modulemap */,
-				F22A1D27227991E494AFDEDF0995DF3D /* EasyStash.xcconfig */,
-				BC8A14F8AD7C717F9DE97EADBD5A24B7 /* EasyStash-dummy.m */,
-				9821BEB054FFC460AB65853DC313ED07 /* EasyStash-Info.plist */,
-				106F5FEC2FB2C64E2273DAC3EAD6C8DE /* EasyStash-prefix.pch */,
-				BE71D12CA41BA43DEAC403E2299138CC /* EasyStash-umbrella.h */,
+				2226740BF2BD64820AAC413B45EA2253 /* DKCameraResource.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2AB641AD88BB645DFB9DD5877A1A5206 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64B3276D451C389A520F26AF9A9716AD /* EasyStash.modulemap */,
+				9D2EA02479A9FCB1F4732F0D13E7A752 /* EasyStash.xcconfig */,
+				EDA42592C085C0E5AF86098612CE9068 /* EasyStash-dummy.m */,
+				505D6093B30A019CADD1ABD21AF60FCE /* EasyStash-Info.plist */,
+				127B074EDC741B04ADFA9DEC5206CE4A /* EasyStash-prefix.pch */,
+				578D93138EAF4AF57CDB4E8F2138F238 /* EasyStash-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/EasyStash";
@@ -161,17 +229,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6134125CC9E2A09728C6943A3484B348 /* DKCamera */ = {
+		58A12DCB742165A2C959F70837F2974F /* SwiftyCam */ = {
 			isa = PBXGroup;
 			children = (
-				01912D8A0F2BC0361E8C2F325724C179 /* DKCamera.swift */,
-				CB42AA17A55BD058CF29AC06E31C3D01 /* DKCameraLocationManager.swift */,
-				071A93B21C15243574AAE80B41DF9A4E /* DKCameraResource.swift */,
-				8EA267030DA7B87DC7542A1CAC28F8B3 /* Resources */,
-				71A4D6C1AB0A3F76C85C3D172B5D60EF /* Support Files */,
+				D59EDF39FE9D31E2F2B177FB18A49C17 /* Orientation.swift */,
+				2BAFFE509C71D50B4207CF1A6A258462 /* PreviewView.swift */,
+				987C5BB48EADF8AB2319E107423B1123 /* SwiftyCamButton.swift */,
+				5D105B061E079121CCD39EB979415FDF /* SwiftyCamViewController.swift */,
+				C399B8FE8AC010297CD7D119A0E1D7A4 /* SwiftyCamViewControllerDelegate.swift */,
+				12CBABED6C507D22F185CD7592B7D774 /* Support Files */,
 			);
-			name = DKCamera;
-			path = DKCamera;
+			name = SwiftyCam;
+			path = SwiftyCam;
 			sourceTree = "<group>";
 		};
 		6A7A9381B1922D13853E5C7B1EF56289 /* iOS */ = {
@@ -185,36 +254,31 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		71A4D6C1AB0A3F76C85C3D172B5D60EF /* Support Files */ = {
+		70C3D88F81786097FA6ECC0DF8895938 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D7E741A212D08ED60BF16A125BD5A6C3 /* DKCamera.modulemap */,
-				9676948592A6F6988293187F9B5EE56C /* DKCamera.xcconfig */,
-				C2B9E7FFE08CF4F460BF862C845AD8F9 /* DKCamera-dummy.m */,
-				F5E4A06844A3DE6032FA03957083BFA9 /* DKCamera-Info.plist */,
-				5A9A62901A804F3FF3D18E87EDB5160C /* DKCamera-prefix.pch */,
-				D6718A32045065B0BD2D321A79CEA9BD /* DKCamera-umbrella.h */,
+				F33A9599771A48C50B25C017A001A40D /* DKCamera.modulemap */,
+				3E768150FA66FFE3ACF2E7989507693B /* DKCamera.xcconfig */,
+				5016B5478AFF083F1CEC62902850EA5D /* DKCamera-dummy.m */,
+				CD0ED5E39EECEF799C3A5C4293EA67CC /* DKCamera-Info.plist */,
+				31DE21B080AC1053E7639DD98A9AEDE9 /* DKCamera-prefix.pch */,
+				FDB155BF99958ECCD93244B0CE372DC3 /* DKCamera-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DKCamera";
 			sourceTree = "<group>";
 		};
-		8EA267030DA7B87DC7542A1CAC28F8B3 /* Resources */ = {
+		72E5A4FC43886968DF589F74D57663F2 /* DKCamera */ = {
 			isa = PBXGroup;
 			children = (
-				E88FEE2DEE55BB471A61D6C4A0FAAD79 /* DKCameraResource.bundle */,
+				66652D67D442B2564BF1E9BCD9D09114 /* DKCamera.swift */,
+				8C2B5BDDD91B47FD56CEDB909EE59474 /* DKCameraLocationManager.swift */,
+				10530059E3C0B2DC9A1D8C595A010D46 /* DKCameraResource.swift */,
+				29D1281429036474B0B414ECF5F33991 /* Resources */,
+				70C3D88F81786097FA6ECC0DF8895938 /* Support Files */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		AE6AFFBD55EA6B799E6CCE77D181AB95 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CA033A3D1AF6D02A993B8BCEE298B0C4 /* DKCamera.framework */,
-				B9FA1339AB409F0AF0B201644DE8B48E /* EasyStash.framework */,
-				59C4170308B728B38ACE42B19D72CCD7 /* Pods_outdoor_io.framework */,
-			);
-			name = Products;
+			name = DKCamera;
+			path = DKCamera;
 			sourceTree = "<group>";
 		};
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
@@ -223,6 +287,16 @@
 				6A7A9381B1922D13853E5C7B1EF56289 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5FABBAA42C0D2488E9A3A11BEB0C612 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72E5A4FC43886968DF589F74D57663F2 /* DKCamera */,
+				24335BE9D7018EEF126336E6E5F17860 /* EasyStash */,
+				58A12DCB742165A2C959F70837F2974F /* SwiftyCam */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C985EF3DDCBC230935A9B818941FD3CE /* Pods-outdoor_io */ = {
@@ -247,29 +321,28 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
-				D2AAAEE058EB52FDE0EBAF65A144ECB7 /* Pods */,
-				AE6AFFBD55EA6B799E6CCE77D181AB95 /* Products */,
+				C5FABBAA42C0D2488E9A3A11BEB0C612 /* Pods */,
+				0F6A79012F316D5FFA7D9AB8AF9778D9 /* Products */,
 				4FC4C5E77C2818255898A793CFF172A3 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D2AAAEE058EB52FDE0EBAF65A144ECB7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6134125CC9E2A09728C6943A3484B348 /* DKCamera */,
-				1B9383E43B4562975DB45AEC3C11BDA1 /* EasyStash */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2D662C397DD7192BF384B1DBB0293A5A /* Headers */ = {
+		045FAA0AECE40D0E518481744237B7FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28BB0D99AEA10915BABCCBEB6FC28B28 /* Pods-outdoor_io-umbrella.h in Headers */,
+				B306E07AA4A70BF341825E72608BD5B0 /* Pods-outdoor_io-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		436972E0164F8FC74E920261DB1C6068 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277C319FE4353FFE162C9B82F7DC63CA /* SwiftyCam-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +365,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		64D8AA920E37251A430220E5E4088BDA /* SwiftyCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B110DB4D4CEC4FC00BB67D0E2BBFAF5 /* Build configuration list for PBXNativeTarget "SwiftyCam" */;
+			buildPhases = (
+				436972E0164F8FC74E920261DB1C6068 /* Headers */,
+				D3154181D32FABD9CC8AC7A7A0EEC9CA /* Sources */,
+				43F575EF353D3221EFC065B05F4FC8E1 /* Frameworks */,
+				605BD82081B7FA8088EC866AEDA0DBCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyCam;
+			productName = SwiftyCam;
+			productReference = 615569F9F2AAC26C59CD508B7D19C0A3 /* SwiftyCam.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		9E6A9737EF2909D1EB8FE2A056F27AF0 /* DKCamera */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58F9785E3D82C1DF049787EA48EBAB17 /* Build configuration list for PBXNativeTarget "DKCamera" */;
@@ -330,18 +421,19 @@
 		};
 		EF64E0CF4B402CB6C5C84BE792856FD6 /* Pods-outdoor_io */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 211585F784F650405FED586A4AE19BD1 /* Build configuration list for PBXNativeTarget "Pods-outdoor_io" */;
+			buildConfigurationList = E6C8DD1359D4E9DAE4A7BFE264B561FB /* Build configuration list for PBXNativeTarget "Pods-outdoor_io" */;
 			buildPhases = (
-				2D662C397DD7192BF384B1DBB0293A5A /* Headers */,
-				D5386290270824E7E3ADCB246A76F323 /* Sources */,
-				FCAF0CDC877420B321996247D9603622 /* Frameworks */,
-				1FB7C07871400763EB5C555E96972E07 /* Resources */,
+				045FAA0AECE40D0E518481744237B7FC /* Headers */,
+				3612E3870AD646E3C8B70042FE8C029C /* Sources */,
+				94ABD1192C00108DF6B05E4A031B7EDD /* Frameworks */,
+				E62147460E7AF8C752C6C02511238EA7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A3673E495419E247FC45905CB5A0D1C8 /* PBXTargetDependency */,
-				92BF5419625A5D1E559F0FAEF265097E /* PBXTargetDependency */,
+				A2FC25181C92C2D8330E726C5A72675D /* PBXTargetDependency */,
+				2B6F4361AAC83876B45A9C797B42DBBC /* PBXTargetDependency */,
+				B00F538F8CE5783A2058B2F7B5239B58 /* PBXTargetDependency */,
 			);
 			name = "Pods-outdoor_io";
 			productName = "Pods-outdoor_io";
@@ -366,13 +458,14 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = AE6AFFBD55EA6B799E6CCE77D181AB95 /* Products */;
+			productRefGroup = 0F6A79012F316D5FFA7D9AB8AF9778D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9E6A9737EF2909D1EB8FE2A056F27AF0 /* DKCamera */,
 				BF7B5D32C3320A2F8BDDE0FD741BF366 /* EasyStash */,
 				EF64E0CF4B402CB6C5C84BE792856FD6 /* Pods-outdoor_io */,
+				64D8AA920E37251A430220E5E4088BDA /* SwiftyCam */,
 			);
 		};
 /* End PBXProject section */
@@ -386,7 +479,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FB7C07871400763EB5C555E96972E07 /* Resources */ = {
+		605BD82081B7FA8088EC866AEDA0DBCF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,6 +487,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		631535B4D040FC0A9FA5B35224045BD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62147460E7AF8C752C6C02511238EA7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,6 +518,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3612E3870AD646E3C8B70042FE8C029C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F04AC189A7CD4DB752B001C4BC956C /* Pods-outdoor_io-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8F0C555DE21402EAA87068FB97239864 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,28 +537,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5386290270824E7E3ADCB246A76F323 /* Sources */ = {
+		D3154181D32FABD9CC8AC7A7A0EEC9CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78098F7A68D0C9D171D3D0BB591FA03C /* Pods-outdoor_io-dummy.m in Sources */,
+				D25D495E9272B58A334AB4D42AA034A6 /* Orientation.swift in Sources */,
+				C4D2F97BEB89870CD40015E2959B879C /* PreviewView.swift in Sources */,
+				B73A69AD6E452E16DDB0709E1BAE4C9E /* SwiftyCam-dummy.m in Sources */,
+				1C9C81EEF94905C32945E2490CAC1872 /* SwiftyCamButton.swift in Sources */,
+				2C4C154110AAFCA33627A76B05A4FADA /* SwiftyCamViewController.swift in Sources */,
+				71744999BCD885CD514F8B636D385DAE /* SwiftyCamViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		92BF5419625A5D1E559F0FAEF265097E /* PBXTargetDependency */ = {
+		2B6F4361AAC83876B45A9C797B42DBBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyStash;
 			target = BF7B5D32C3320A2F8BDDE0FD741BF366 /* EasyStash */;
-			targetProxy = 1BB256FEEBF7084DF5C9F7FEA23D902A /* PBXContainerItemProxy */;
+			targetProxy = 8B6DB20F1DC8B9DAB4E823A964ECF6AF /* PBXContainerItemProxy */;
 		};
-		A3673E495419E247FC45905CB5A0D1C8 /* PBXTargetDependency */ = {
+		A2FC25181C92C2D8330E726C5A72675D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DKCamera;
 			target = 9E6A9737EF2909D1EB8FE2A056F27AF0 /* DKCamera */;
-			targetProxy = 43BE5C071C8D9D22A181463F4BEBB10B /* PBXContainerItemProxy */;
+			targetProxy = 80820F0EDCB6AD043349D6EF8EF3835A /* PBXContainerItemProxy */;
+		};
+		B00F538F8CE5783A2058B2F7B5239B58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyCam;
+			target = 64D8AA920E37251A430220E5E4088BDA /* SwiftyCam */;
+			targetProxy = 851DDA0DD72D09CE8E1A1A8735EA0110 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -519,47 +638,9 @@
 			};
 			name = Debug;
 		};
-		3FB2045DFF439A765A1C5E1D91663971 /* Debug */ = {
+		1F1C2BCAE9B1605B81C0DBFCDB20BEBF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78274479D792703CAD4F2EC9E7407E24 /* Pods-outdoor_io.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-outdoor_io/Pods-outdoor_io-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-outdoor_io/Pods-outdoor_io.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8D729BE7D3E50E199368FB932F4510A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9676948592A6F6988293187F9B5EE56C /* DKCamera.xcconfig */;
+			baseConfigurationReference = FB78E451554BB93724F709EAAD11CFFC /* SwiftyCam.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -570,8 +651,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DKCamera/DKCamera-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DKCamera/DKCamera-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyCam/SwiftyCam-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyCam/SwiftyCam-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -579,9 +660,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/DKCamera/DKCamera.modulemap";
-				PRODUCT_MODULE_NAME = DKCamera;
-				PRODUCT_NAME = DKCamera;
+				MODULEMAP_FILE = "Target Support Files/SwiftyCam/SwiftyCam.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyCam;
+				PRODUCT_NAME = SwiftyCam;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -593,7 +674,42 @@
 			};
 			name = Release;
 		};
-		936DD38A194CA43875A00E1D50771320 /* Release */ = {
+		612D2D5215345A483B88FA372E3B5678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB78E451554BB93724F709EAAD11CFFC /* SwiftyCam.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyCam/SwiftyCam-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyCam/SwiftyCam-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyCam/SwiftyCam.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyCam;
+				PRODUCT_NAME = SwiftyCam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A4E08F112DDD51F2064EDB1BA57D4D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22E0A88D6BC7F4EFF190BC809E088AC0 /* Pods-outdoor_io.release.xcconfig */;
 			buildSettings = {
@@ -632,9 +748,45 @@
 			};
 			name = Release;
 		};
+		8D729BE7D3E50E199368FB932F4510A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E768150FA66FFE3ACF2E7989507693B /* DKCamera.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DKCamera/DKCamera-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DKCamera/DKCamera-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DKCamera/DKCamera.modulemap";
+				PRODUCT_MODULE_NAME = DKCamera;
+				PRODUCT_NAME = DKCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B8CB4CC9A6E076826225BF66C2640406 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F22A1D27227991E494AFDEDF0995DF3D /* EasyStash.xcconfig */;
+			baseConfigurationReference = 9D2EA02479A9FCB1F4732F0D13E7A752 /* EasyStash.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -668,9 +820,47 @@
 			};
 			name = Debug;
 		};
+		C36BC1CBD843817BE38E59E7E919ED13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78274479D792703CAD4F2EC9E7407E24 /* Pods-outdoor_io.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-outdoor_io/Pods-outdoor_io-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-outdoor_io/Pods-outdoor_io.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E2400FFD8ECAF9153974E842405160E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9676948592A6F6988293187F9B5EE56C /* DKCamera.xcconfig */;
+			baseConfigurationReference = 3E768150FA66FFE3ACF2E7989507693B /* DKCamera.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -705,7 +895,7 @@
 		};
 		E8704E931F1F902D5C6E915AAA23D3BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F22A1D27227991E494AFDEDF0995DF3D /* EasyStash.xcconfig */;
+			baseConfigurationReference = 9D2EA02479A9FCB1F4732F0D13E7A752 /* EasyStash.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -803,15 +993,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		211585F784F650405FED586A4AE19BD1 /* Build configuration list for PBXNativeTarget "Pods-outdoor_io" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3FB2045DFF439A765A1C5E1D91663971 /* Debug */,
-				936DD38A194CA43875A00E1D50771320 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -830,11 +1011,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		7B110DB4D4CEC4FC00BB67D0E2BBFAF5 /* Build configuration list for PBXNativeTarget "SwiftyCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612D2D5215345A483B88FA372E3B5678 /* Debug */,
+				1F1C2BCAE9B1605B81C0DBFCDB20BEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D63E81A87B012DAA8B06655A3B0B9041 /* Build configuration list for PBXNativeTarget "EasyStash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8CB4CC9A6E076826225BF66C2640406 /* Debug */,
 				E8704E931F1F902D5C6E915AAA23D3BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6C8DD1359D4E9DAE4A7BFE264B561FB /* Build configuration list for PBXNativeTarget "Pods-outdoor_io" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36BC1CBD843817BE38E59E7E919ED13 /* Debug */,
+				8A4E08F112DDD51F2064EDB1BA57D4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

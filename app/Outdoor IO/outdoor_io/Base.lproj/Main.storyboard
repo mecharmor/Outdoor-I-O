@@ -160,26 +160,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="477-3q-0f1">
-                                <rect key="frame" x="16" y="66" width="343" height="452"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Camera Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOF-JV-OHv">
-                                        <rect key="frame" x="102" y="210" width="139" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-Ld-vtx">
-                                <rect key="frame" x="144" y="542" width="86" height="62"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IQ-XB-8yR">
+                                <rect key="frame" x="151" y="427" width="86" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Camera"/>
                                 <connections>
-                                    <action selector="cam_pressed:" destination="z8v-2X-QXG" eventType="touchUpInside" id="DwD-74-mfI"/>
+                                    <action selector="cam_pressed:" destination="z8v-2X-QXG" eventType="touchUpInside" id="sMn-2b-Oyb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -188,8 +174,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Hk9-uB-gqC"/>
                     <connections>
-                        <outlet property="cam_view" destination="477-3q-0f1" id="4u8-Q8-jcK"/>
-                        <outlet property="cameraViewText" destination="pOF-JV-OHv" id="WiZ-uk-G2z"/>
+                        <outlet property="cameraButton" destination="4IQ-XB-8yR" id="vaj-fW-2pY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tFc-yH-fZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

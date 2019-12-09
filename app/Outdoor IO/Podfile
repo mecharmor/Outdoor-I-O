@@ -3,4 +3,5 @@ target 'outdoor_io' do
 
   pod 'EasyStash'
   pod 'DKCamera'
+  pod 'SwiftyCam'
 end

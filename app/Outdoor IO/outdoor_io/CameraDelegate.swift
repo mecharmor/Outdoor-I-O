@@ -7,25 +7,22 @@
 //  https://www.appcoda.com/avfoundation-swift-guide/
 
 import UIKit
-import DKCamera
+import SwiftyCam
 
-class CameraDelegate: UIViewController {
-    
-    let camera: DKCamera = DKCamera()
+class CameraDelegate: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
 
     @IBOutlet var cam_view: UIView!
     @IBOutlet weak var cameraViewText: UILabel!
+    @IBOutlet weak var cameraButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        guard let camView = self.camera.cameraOverlayView else {
-            self.cam_view = UIView()
-            print("No Camera Detected!")
-            return
-        }
-        self.cameraViewText.isHidden = true
-        self.cam_view = camView
+        cameraDelegate = self
+        tapToFocus = true
+        pinchToZoom = true
+        maxZoomScale = 2.0
+        shouldUseDeviceOrientation = true
+        doubleTapCameraSwitch = true
     }
     
 //    @IBAction func back_pressed(_ sender: Any) {
@@ -34,23 +31,27 @@ class CameraDelegate: UIViewController {
 //        }
 //    }
     @IBAction func cam_pressed(_ sender: Any) {
-        print("Take Picture Pressed!")
-        self.camera.didFinishCapturingImage = { (image: UIImage?, metadata: [AnyHashable : Any]?) in
-            print("go to next screen here and save coorindates")
-            
-            guard let img = image else{
-                print("No Image taken!")
-                return
-            }
-            
-            if Model.I.newPin(img: img) {
-                print("Successfully saved pin!")
-            }else {
-                print("Failed to save pin!")
-            }
-        }
-        
+        takePhoto()
     }
+    
+    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
+        
+        print("attempted to take photo with SwiftyCam")
+         // Called when takePhoto() is called or if a SwiftyCamButton initiates a tap gesture
+         // Returns a UIImage captured from the current session
+        
+        //            guard let img = image else{
+        //                print("No Image taken!")
+        //                return
+        //            }
+                    
+        //            if Model.I.newPin(img: img) {
+        //                print("Successfully saved pin!")
+        //            }else {
+        //                print("Failed to save pin!")
+        //            }
+    }
+    
     
 }
 
