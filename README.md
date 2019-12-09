@@ -64,12 +64,13 @@ If you have error, you should see a red icon on the right bottom
 ```
 
 ## Outdoor I/O Mockups
-![menu_2](https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/drawing.jpg | width=200)
-![menu_2](https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu.png | width=200)
-![menu_2](https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu_2.png | width=200)
-![history](https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/history.png | width=200)
-![menu_2](https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu_color.png | width=200)
-![history_pin_details](https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/history_pin_details.png | width=200)
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/drawing.jpg" alt="" width="200px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu.png" alt="" width="200px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu_2.png" alt="" width="200px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/history.png" alt="" width="200px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/menu_color.png" alt="" width="200px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/history_pin_details.png" alt="" width="200px" height="auto">
+<img src="https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/" alt="" width="200px" height="auto">
 
 
 ## Feedback
