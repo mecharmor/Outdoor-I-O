@@ -1,25 +1,31 @@
 <h3 align="center">
 Outdoor I/O
 </h3>
+![Sample Gif](https://github.com/mecharmor/CSC690-IOS-APP/mockups/logo.png)
 
 ## Team Members
 - Cory Lewis
 - Roderic Kong
 
-## Road Map
-| Status | Goal | Note |
-| :---: | :--- | --- |
-| ✔ | [11/11 - Git Setup](https://github.com/mecharmor) | `done` |
-| ❌ | [11/14 - Proposal: Must have and Nice to have features](https://github.com/mecharmor) |`in progress`|
-| ❌ | [Wireframes and Flow](https://github.com/ipfs/pm/pull/131) | `incomplete` |
-| ❌ | [UI -> Create App Navigation](https://github.com/ipfs/pm/pull/131) | `incomplete` |
-| ❌ | [DB -> Setup SQLITE DB](https://github.com/mecharmor) |`incomplete`|
-| ❌ | [DB -> Setup Swift MapKit for dropping pins and pathing](https://github.com/mecharmor) | `incomplete` |
-| ❌ | [INTEGRATION -> Connect View to Back End](https://github.com/mecharmor) | `incomplete` |
-| ❌ | [tbd implementation....](https://github.com/mecharmor) | `incomplete` |
-| ❌ | [11/21 - Prototype: Wireframes, work est, finalize features ](https://github.com/mecharmor) |`incomplete`|
-| ❌ | [12/5 - Last Week Check-in ](https://github.com/mecharmor) |`incomplete`|
-| ❌ | [12/12 - Final Project deadline ](https://github.com/mecharmor) |`incomplete`|
+## Features
+- Must Have Features ❌
+    - Persistent Data Storage ✔
+    - Take Photos With Device Camera ✔
+    - Save Photos in persistent Data Storage ✔
+    - Fetch GPS Coordinates and Save in Persistent storage ✔
+    - Display all pins containing saved locations for trip ❌
+    - Display History of all trips taken ❌
+    - Display map containing all pins from selected trip ❌
+    - Shall allow users to view previous trips ❌
+    - About Page  ❌
+- Nice to Have Features
+    - Users shall be able to view all photos taken on previous trips ❌
+    - If user closes app the app shall cache the current trip so progress is not lost ❌
+    - path drawn from all pins to show user the trip they took ❌
+    - user shall have the ability to preview photos from their current trip ❌
+    - Add Settings options for user such as ❌
+        - clear trips ❌
+        - export photos to use elsewhere? ❌
 
 ## What's Hunter Helper?
 
@@ -28,9 +34,6 @@ Hunter Helper is an IOS app designed for hunters who need an offline app to keep
 - Use **Core Location to track hunting path** (https://developer.apple.com/documentation/corelocation)
 - User can **Add a weapon to their dashboard and modify attributes**
 - User can **Start Hunt** so their traveled path will be saved so they can playback the trail they took
-
-### [Checkout our App on GitHub ](https://github.com/mecharmor/Hunter-IOS-App)
-![Sample Gif](https://media.giphy.com/media/1HZ1wggAdwVIA/giphy.gif)
 
 
 ## Functionality
@@ -61,6 +64,10 @@ Close the opened popup
 Click on build an run
 If you have error, you should see a red icon on the right bottom
 ```
+
+## Outdoor I/O Mockups
+![Sample Gif](https://github.com/mecharmor/CSC690-IOS-APP/mockups/menu_2.png)
+
 
 ## Feedback
 For any other questions about this repo in general please reach out to [**@mecharmor**](https://github.com/mecharmor) on Github. <br>
