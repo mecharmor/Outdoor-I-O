@@ -103,23 +103,25 @@ class Start_Tracking: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if Model.I.isTripInProgress() == false {
+        if Model.I.isTripInProgress() {
+            guard let pins = Model.I.getTripPins() else {
+                print("No Pins!")
+                return
+            }
+            for pin :Pin in pins {
+                print("Pin added!")
+                let pinned = MKPointAnnotation()
+                pinned.title = pin.msg
+                pinned.coordinate = CLLocationCoordinate2D(latitude: pin.lat, longitude: pin.long)
+                self.map_view.addAnnotation(pinned)
+            }
+        } else {
             self.promptForTrip()
         }
-        
-//        guard let trips = Model.I.getAllTrips() else {
-//            print("No Trips to retrieve")
-//            return
-//        }
-//        for trip in trips {
-//            guard let pins = trip.pins else {
-//                continue
-//            }
-//            for pin in pins {
-//                print("THUMBNAIL: \(pin.thumb!)")
-//            }
-//        }
     }
+    
+    
+    
     
     // --- Viewer --- //
     override func viewDidLoad() {
@@ -151,8 +153,6 @@ class Start_Tracking: UIViewController {
         } else {
             print("Please turn on location services or GPS")
         }
-        
-        
     }
     
     override func didReceiveMemoryWarning() {

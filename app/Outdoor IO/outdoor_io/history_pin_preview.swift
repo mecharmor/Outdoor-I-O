@@ -35,6 +35,7 @@ class history_pin_preview: UIViewController, UITableViewDelegate, CLLocationMana
         self.map.showsUserLocation = true
         let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: self.pin?.lat ?? 0.1, longitude: self.pin?.long ?? 0.1), span: MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002))
          self.map.setRegion(region, animated: true)
+        
     }
 
 //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

@@ -288,13 +288,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IQ-XB-8yR">
-                                <rect key="frame" x="144.5" y="574.5" width="86" height="62"/>
+                                <rect key="frame" x="145" y="574.5" width="85.5" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <size key="titleShadowOffset" width="0.0" height="5"/>
                                 <state key="normal" image="Camera"/>
                                 <connections>
                                     <action selector="cam_pressed:" destination="z8v-2X-QXG" eventType="touchUpInside" id="sMn-2b-Oyb"/>
+                                    <action selector="picturetaken:" destination="uXN-In-ewH" eventType="touchUpInside" id="BRH-ES-gdx"/>
                                     <segue destination="uXN-In-ewH" kind="unwind" unwindAction="unwind_to_start_tracking:" id="oT1-qc-qWM"/>
                                 </connections>
                             </button>
