@@ -41,19 +41,16 @@ class Start_Tracking: UIViewController {
     // --- button settings --- //
     func button_settings() {
         // button view definitions
-        Back.backgroundColor = UIColor.init(red: 46/255, green: 89/255, blue: 70/255, alpha: 1)
-        Back.layer.cornerRadius = 5.0
+        //Back.backgroundColor = UIColor.init(red: 46/255, green: 89/255, blue: 70/255, alpha: 1)
+        //Back.layer.cornerRadius = 5.0
         
     }
     
     //--- backdrop settings --- //
     func screen_backdrop() {
-        view.backgroundColor = UIColor.init(red: 46/255, green: 64/255, blue: 56/255, alpha: 1)
+        //view.backgroundColor = UIColor.init(red: 46/255, green: 64/255, blue: 56/255, alpha: 1)
     }
-    
-    func createTrip(){
-        //code TODO
-    }
+
     
     func showInputDialog(title:String? = nil,
                          subtitle:String? = nil,
@@ -96,6 +93,12 @@ class Start_Tracking: UIViewController {
                                 return
                             }
                             self.promptForTrip()
+        }
+    }
+    @IBAction func endTrip(_ sender: Any) {
+        if Model.I.isTripInProgress() {
+            Model.I.save()
+            self.dismiss(animated: true, completion: nil)
         }
     }
     

@@ -17,8 +17,8 @@ class Settings: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        screen_backdrop()
-        button_settings()
+        //screen_backdrop()
+        //button_settings()
         // Do any additional setup after loading the view.
     }
     
