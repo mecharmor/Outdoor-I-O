@@ -41,6 +41,8 @@ class History: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 
+    @IBAction func unwind_to_history(_ sender: UIStoryboardSegue){}
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.row < trips.count else {
             tableView.deselectRow(at: indexPath, animated: true)

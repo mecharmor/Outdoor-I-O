@@ -38,7 +38,6 @@ class history_pin_preview: UIViewController, UITableViewDelegate, CLLocationMana
         
     }
 
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//
-//    }
+    
+
 }

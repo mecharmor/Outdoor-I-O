@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0M-ZV-pEd">
@@ -83,11 +83,11 @@
             <objects>
                 <viewController id="TtT-Yc-NOa" customClass="History" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nad-em-02v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d7M-cq-wiI">
-                                <rect key="frame" x="0.0" y="57" width="375" height="590"/>
+                                <rect key="frame" x="0.0" y="57" width="414" height="751"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oR-aj-iwU">
@@ -95,6 +95,9 @@
                                 <state key="normal" title="Back" image="button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Lc8-4F-F5q" kind="unwind" unwindAction="unwind_to_main:" id="WQ0-7e-egc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -116,6 +119,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vek-Kb-0Qe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Lc8-4F-F5q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2088.8000000000002" y="245.12743628185908"/>
         </scene>
@@ -124,11 +128,11 @@
             <objects>
                 <viewController id="rcJ-oh-LIR" customClass="history_pin" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5NJ-5u-o2E">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w3p-e0-BZa">
-                                <rect key="frame" x="0.0" y="57" width="375" height="590"/>
+                                <rect key="frame" x="0.0" y="57" width="414" height="751"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ua-Bw-V67">
@@ -136,6 +140,9 @@
                                 <state key="normal" title="Button" image="button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="7g2-VO-Tgn" kind="unwind" unwindAction="unwind_to_history:" id="I08-H7-ggb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -157,6 +164,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAJ-qk-iYS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7g2-VO-Tgn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3016.8000000000002" y="244.22788605697153"/>
         </scene>
@@ -165,20 +173,23 @@
             <objects>
                 <viewController id="Joi-KR-7pK" customClass="history_pin_preview" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aCL-hf-iZj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D80-qq-BMh">
-                                <rect key="frame" x="0.0" y="57" width="375" height="326"/>
+                                <rect key="frame" x="0.0" y="57" width="414" height="326"/>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rqz-n0-J3L">
-                                <rect key="frame" x="0.0" y="383" width="375" height="264"/>
+                                <rect key="frame" x="0.0" y="383" width="414" height="425"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odQ-PI-wMP">
                                 <rect key="frame" x="16" y="4" width="79" height="50"/>
                                 <state key="normal" title="Button" image="button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Za1-6R-jj2" kind="unwind" unwindAction="unwind_to_history_pin:" id="MWB-vH-wMo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -204,6 +215,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N90-JI-oOP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Za1-6R-jj2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3981.5999999999999" y="244.22788605697153"/>
         </scene>
@@ -212,7 +224,7 @@
             <objects>
                 <viewController id="mXM-bR-YZ5" customClass="Start_Tracking" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dXs-8m-g1c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6T-Wv-9D9">
@@ -228,11 +240,11 @@
                                     <segue destination="84n-WL-R67" kind="unwind" unwindAction="unwind_to_main:" id="3ie-HC-kTo"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="542-TN-yx1">
-                                <rect key="frame" x="0.0" y="65" width="375" height="582"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="542-TN-yx1">
+                                <rect key="frame" x="0.0" y="65" width="414" height="777"/>
                             </mapView>
                             <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMG-mV-q7V">
-                                <rect key="frame" x="289" y="558" width="70" height="50"/>
+                                <rect key="frame" x="328" y="719" width="70" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Wdf-OB-Pd3"/>
                                     <constraint firstAttribute="width" constant="70" id="yjS-7y-nD6"/>
@@ -243,7 +255,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEH-ay-vvi">
-                                <rect key="frame" x="302" y="27" width="57" height="30"/>
+                                <rect key="frame" x="341" y="27" width="57" height="30"/>
                                 <state key="normal" title="End Trip">
                                     <color key="titleColor" name="back_button"/>
                                 </state>
@@ -254,16 +266,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="542-TN-yx1" firstAttribute="top" secondItem="kp7-FZ-3WK" secondAttribute="top" constant="65" id="1YL-pP-lgX"/>
                             <constraint firstItem="NEH-ay-vvi" firstAttribute="top" secondItem="kp7-FZ-3WK" secondAttribute="top" constant="27" id="3WB-Te-Fsa"/>
-                            <constraint firstItem="542-TN-yx1" firstAttribute="top" secondItem="NEH-ay-vvi" secondAttribute="bottom" constant="12" id="DuK-tv-U0C"/>
                             <constraint firstItem="kp7-FZ-3WK" firstAttribute="trailing" secondItem="542-TN-yx1" secondAttribute="trailing" id="KBl-1A-tEw"/>
                             <constraint firstItem="P6T-Wv-9D9" firstAttribute="leading" secondItem="kp7-FZ-3WK" secondAttribute="leading" constant="16" id="XAx-m1-dQW"/>
+                            <constraint firstItem="kp7-FZ-3WK" firstAttribute="bottom" secondItem="JMG-mV-q7V" secondAttribute="bottom" constant="39" id="asA-Dr-UMU"/>
                             <constraint firstItem="542-TN-yx1" firstAttribute="leading" secondItem="kp7-FZ-3WK" secondAttribute="leading" id="dNY-Qy-yQm"/>
-                            <constraint firstItem="JMG-mV-q7V" firstAttribute="top" secondItem="542-TN-yx1" secondAttribute="centerY" constant="200" id="gLQ-M2-APi"/>
                             <constraint firstItem="kp7-FZ-3WK" firstAttribute="trailing" secondItem="JMG-mV-q7V" secondAttribute="trailing" constant="16" id="gxf-eJ-0HF"/>
-                            <constraint firstItem="kp7-FZ-3WK" firstAttribute="bottom" secondItem="542-TN-yx1" secondAttribute="bottom" id="h8b-SJ-PAB"/>
                             <constraint firstItem="P6T-Wv-9D9" firstAttribute="top" secondItem="kp7-FZ-3WK" secondAttribute="top" constant="12" id="lpQ-uN-xhr"/>
-                            <constraint firstItem="542-TN-yx1" firstAttribute="top" secondItem="P6T-Wv-9D9" secondAttribute="bottom" constant="12" id="wM7-wm-WpF"/>
+                            <constraint firstItem="542-TN-yx1" firstAttribute="bottom" secondItem="kp7-FZ-3WK" secondAttribute="bottom" constant="34" id="rof-GL-d7M"/>
                             <constraint firstItem="kp7-FZ-3WK" firstAttribute="trailing" secondItem="NEH-ay-vvi" secondAttribute="trailing" constant="16" id="xdM-bw-RlX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kp7-FZ-3WK"/>
@@ -277,18 +288,18 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFX-jh-wYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="84n-WL-R67" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1856.8" y="-656.22188905547227"/>
+            <point key="canvasLocation" x="1856.521739130435" y="-656.25"/>
         </scene>
         <!--Camera Delegate-->
         <scene sceneID="816-mr-U6t">
             <objects>
                 <viewController id="z8v-2X-QXG" customClass="CameraDelegate" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fiu-51-KNs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IQ-XB-8yR">
-                                <rect key="frame" x="145" y="574.5" width="85.5" height="62"/>
+                                <rect key="frame" x="164.5" y="574.5" width="85.5" height="223"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <size key="titleShadowOffset" width="0.0" height="5"/>
@@ -323,7 +334,7 @@
             <objects>
                 <viewController id="SUw-sJ-v2m" customClass="Settings" customModule="outdoor_io" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMd-RR-nkt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQW-S8-0V1">
@@ -361,6 +372,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBa-qO-YhN">
                                 <rect key="frame" x="16" y="20" width="50" height="50"/>
                                 <state key="normal" image="button"/>
+                                <connections>
+                                    <segue destination="qn2-Y0-cmN" kind="unwind" unwindAction="unwind_to_main:" id="Qw1-Id-SAk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
