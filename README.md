@@ -1,4 +1,5 @@
 # Outdoor I/O
+### Note: Some commits were made on @mecharmor's account from bittersweetsalt/Roderic because he remoted into my iMac to complete work remotely due to the library running out of loaner macbooks.
 ![logo](https://github.com/mecharmor/CSC690-IOS-APP/blob/master/mockups/logo.png)
 
 ## What's Outdoor I/O?
