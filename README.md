@@ -43,7 +43,7 @@ If you have error, you should see a red icon on the right bottom
     - Fetch GPS Coordinates and Save in Persistent storage ✔
     - Display all pins containing saved locations for trip ✔
     - Display History of all trips taken ✔
-    - Use **Core Location to path** (https://developer.apple.com/documentation/corelocation) ✔
+    - Use **Core Location** (https://developer.apple.com/documentation/corelocation) ✔
     - Display map containing all pins from selected trip ✔
     - Shall allow users to view previous trips ✔
     - About Page  ✔
