@@ -35,19 +35,19 @@ If you have error, you should see a red icon on the right bottom
 ```
 
 ## Features
-- Must Have Features ❌
+- Must Have Features ✔
     - Persistent Data Storage ✔
     - Take Photos With Device Camera ✔
     - Save Photos in persistent Data Storage ✔
     - Fetch GPS Coordinates and Save in Persistent storage ✔
-    - Display all pins containing saved locations for trip ❌
-    - Display History of all trips taken ❌
+    - Display all pins containing saved locations for trip ✔
+    - Display History of all trips taken ✔
     - Use **Core Location to path** (https://developer.apple.com/documentation/corelocation) ✔
-    - Display map containing all pins from selected trip ❌
-    - Shall allow users to view previous trips ❌
-    - About Page  ❌
+    - Display map containing all pins from selected trip ✔
+    - Shall allow users to view previous trips ✔
+    - About Page  ✔
 - Nice to Have Features
-    - Users shall be able to view all photos taken on previous trips ❌
+    - Users shall be able to view all photos taken on previous trips ✔
     - If user closes app the app shall cache the current trip so progress is not lost ❌
     - path drawn from all pins to show user the trip they took ❌
     - user shall have the ability to preview photos from their current trip ❌

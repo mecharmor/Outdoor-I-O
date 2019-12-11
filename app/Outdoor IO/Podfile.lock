@@ -1,0 +1,24 @@
+PODS:
+  - DKCamera (1.6.6)
+  - EasyStash (1.0.0)
+  - SwiftyCam (4.0.0)
+
+DEPENDENCIES:
+  - DKCamera
+  - EasyStash
+  - SwiftyCam
+
+SPEC REPOS:
+  trunk:
+    - DKCamera
+    - EasyStash
+    - SwiftyCam
+
+SPEC CHECKSUMS:
+  DKCamera: d6fad4db4b25c00eefe6904e9c86a926034d0c62
+  EasyStash: f42c709eaaa0cd83167163998b0746b4defb0015
+  SwiftyCam: 6e57914771d972fbe508e759dc9d0150a44a93fd
+
+PODFILE CHECKSUM: b8ea33ee81dbe3f5f8fbc2b85085d6d8ad98c59a
+
+COCOAPODS: 1.8.4

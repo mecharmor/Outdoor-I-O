@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-outdoor_io/Pods-outdoor_io-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DKCamera/DKCamera.framework
+${BUILT_PRODUCTS_DIR}/EasyStash/EasyStash.framework
+${BUILT_PRODUCTS_DIR}/SwiftyCam/SwiftyCam.framework
