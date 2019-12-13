@@ -32,9 +32,16 @@ class history_pin_preview: UIViewController, UITableViewDelegate, CLLocationMana
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.map.showsUserLocation = true
+        self.map.showsUserLocation = false
         let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: self.pin?.lat ?? 0.1, longitude: self.pin?.long ?? 0.1), span: MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002))
          self.map.setRegion(region, animated: true)
+        
+        for _ in [1,2]{
+            let pinned = MKPointAnnotation()
+            pinned.title = self.pin?.msg
+            pinned.coordinate = CLLocationCoordinate2D(latitude: self.pin?.lat ?? 0.1, longitude: self.pin?.long ?? 0.1)
+            self.map.addAnnotation(pinned)
+        }
         
     }
 
